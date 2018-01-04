@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Alex Moulton：奢侈的是理念_宽屏大气博客文章类织梦模板-zhanoo.com</title>
+<meta name="keywords" content="Alex,Moulton,奢侈,理念,如果,路上,一辆,自行" />
+<meta name="description" content=" 来自英国的单车品牌 MOULTON Bicycle Company 已经有超过50年制作自行车的经验，当中其以不锈钢跟碳纤打造车身的特色更为不少人所津津乐道﹐皆因其制成品既坚固耐用同时又非常轻身... " />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+<script src="/xunmoban/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/article.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script>
+ 
+</head>
+<body class="single2">
+   <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="宽屏大气博客文章类织梦模板-zhanoo.com">宽屏大气博客文章类织梦模板-zhanoo.com</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+<li><a href="/lookbike/">单车分类</a>
+<ul>
+
+<li><a href="/lookbike/fixed-gear/">死飞车</a></li>
+
+<li><a href="/lookbike/vintagebicycle/">复古骑行</a></li>
+
+<li><a href="/lookbike/roadbicycle/">公路车</a></li>
+
+<li><a href="/lookbike/mountainbike/">山地车</a></li>
+
+<li><a href="/lookbike/small/">折叠/小径车</a></li>
+
+<li><a href="/lookbike/bmx/">BMX</a></li>
+
+<li><a href="/lookbike/otherbike/">城市车及其他</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/gear/">骑行装备</a>
+<ul>
+
+<li><a href="/gear/accessories/">车身装备</a></li>
+
+<li><a href="/gear/rs/">人身装备</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/life/">单车生活</a>
+
+
+
+
+
+ </li2><li><a href="/news/">行业资讯</a>
+
+
+
+
+
+ </li2>
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+    <div id="wrapper">
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;">
+                    <div class="path"><a href='/'>主页</a> > <a href='/lookbike/'>单车分类</a> > <a href='/lookbike/small/'>折叠/小径车</a> > </div>
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>Alex Moulton：奢侈的是理念</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：2014-02-06 12:09编辑：xunmoban.com</p>
+                            </div>
+                            <div class="div-content">
+                               
+                                <p>
+                                    <object width="790" height="500" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="src" value="http://player.youku.com/player.php/sid/XNDM2OTQwMzY0/v.swf" /><param name="quality" value="high" /><param name="allowscriptaccess" value="sameDomain" /><param name="allowfullscreen" value="true" /><embed width="790" height="500" type="application/x-shockwave-flash" src="http://player.youku.com/player.php/sid/XNDM2OTQwMzY0/v.swf" quality="high" allowscriptaccess="sameDomain" allowfullscreen="true" /></object></p><p>
+如果在公路上，有一辆自行车以80迈的速度从你身边驰过，你是否会以为是自己的错觉？如果有朋友请你到一家车行，喝着咖啡，听着音乐，有服务生柔声轻语地为你介绍，你是否会以为走进的是劳斯莱斯的4S店？</p><p>
+没错，这就是一家4S店——不过，是一家Alex Moulton品牌的小轮径自行车的4S店.早在1986年，Jim Glover就骑着Moulton自行车创造了迄今为止依旧是世界第一的纪录--每小时82.54公里。这辆自行车的父亲便是Alex Moulton博士，而第一家中国和香港地区的Moulton自行车4s店的则是香港荣烽公司总经理李伟浩先生。</p><p>
+<strong>邂逅Alex Moulton品牌</strong></p><p>
+李伟浩先生可谓是自行车业界的专家，他2004年创立荣烽公司，投身自行车行业。先后成为英国的Alex Moulton、日本的Tyrell、德国的Continental、意大利的Cinelli、美国的Leader Bike等多个知名品牌的中国和香港地区的总代理。什么车好，什么车有什么特点，绝逃不过他的法眼。</p><p>
+说到Alex Moulton，他就两眼放光。每次外出，他都要将他心爱的一辆Moulton自行车拆卸装箱，到目的地再花15分钟的时间装起来，随时随地地骑着它观光。在台湾、在日本冲绳海天一色的海滨，在澳洲空阔的公路上，都留下了他骑着Moulton自行车的身影。工作之余，骑在Moulton自行车上，任傍晚的海风吹拂在脸上，头脑一片清凉，那种感觉，是李伟浩最享受的。</p><p>
+李伟浩最津津乐道的，还有他于2009年在香港开设的Alex Moulton陈列室和维修中心。这家店之所以被我们称作4S店，不仅因为堪称最贵的小轮车-过二十万售价的Double Pylon作为店宝，还有这家店的豪华与人性化。李先生还介绍道，Alex Moulton小轮车最具品质的地方，除了其创造性的设计和材质，更在于它是手工打造——每款每年的生产量只有</p><p>
+10台！不仅如此，在Alex Moulton博士90寿辰之际，Moulton自行车工厂为他特别推出了Moulton Sixty的纪念版，全球限量191台车，此款车型耗时整整8年。目前，李先生带到中国的这款经典限量纪念版Moulton Sixty，编号为135号。</p><p>
+<img class="alignnone size-full wp-image-8745" title="alex-moulton-marc-jubilee2" src="http://www.700bike.com/wp-content/uploads/2012/08/alex-moulton-marc-jubilee2.jpg" alt="" width="780" height="674" />
+<p style="text-align: center;">早期的AM版本</p>
+<strong>　工艺精湛的Moulton小轮径自行车</strong></p><p>
+Alex Moulton品牌最大的创举就是小轮径自行车，其本身的设计与大轮径车有着颠覆性的区别，而车架要求是整辆小轮车中最重要的课题之一，但是Alex Moulton博士的设计完美跨越了这一重要的台阶，同时也间接地带动了先进折叠车的发展，这对自行车行业未来半个多世纪的发展有着里程碑般的意义。</p><p>
+那么小的轮子，如何保证车身的稳定呢？李先生透露了一个秘密，他打开图册，指着上面小轮车和普通大轮车重叠的图形告诉我们：自行车的稳定性并不在于轮子的大小，最重要的在于两轮之间轴距的大小，Alex Moulton品牌的小轮车的轴距甚至比大轮车还略大，骑上去，自然就不会那么晃动。</p><p>
+很多业内人士将Alex Moulton比作劳斯莱斯，其实也有技术上的原因。Alex Moulton博士曾重新定义了汽车界和自行车界的技术，并因车辆避震设计而举世闻名。值得一提的是，空气动力学等本来广泛用于汽车设计的技术，但却被Alex Moulton博士引入到Moulton小轮径自行车中，使得Moulton自行车负载了只有在汽车界才能听到的“技术过剩”的美誉。</p><p>
+<strong>　“人车一体”的非凡理念</strong></p><p>
+入门版就卖15,800元、最贵的要卖到28万元的自行车，这样的定位是否很孤独？</p><p>
+李先生似乎看透了我们的心思，微笑着告诉我们：这个车，并不是卖给仅仅骑自行车的人。他的目标客户，是热爱自行车的人！拥有这份热爱的朋友，不但会需要骑自行车的快乐，还会需要随身带自行车的便捷，更需要自行车对他无微不至的体贴和关怀。而这个，就非Alex Moulton品牌莫属了！现在，他并不急着卖车，他更多的是想推广他“人车一体”的理念。他说，“他记得当年淮海路曾有过上下班高峰时允许自行车上路的规定，那时候，他看到一群人骑着自行车在法国梧桐下驰过……那种自由、轻松和愉快的感觉，是他始终追逐的梦想。”此时，李先生神往地眯起眼睛，仿佛眼前的车展幻化成为一条属于自行车的林荫道……</p><p>
+<strong>Alex Moulton大事记</strong></p><p>
+五十年代末，Alex Moulton博士开始专注设计“改良”的自行车。1960年，Moulton自行车于1962年在伯爵院自行车展中首次亮相，革命性的设计冲击传统的自行车。它很快成为动荡的60年代跟迷你短裙和微型汽车同样时尚的迷你自行车亮点。一年之间，Moulton自行车便成为英国的第二大车架建造商。</p><p>
+1977年，Alex Moulton博士提出了空间车架概念化，此创举不仅解决了不甘于表面上看似无法解决的拆卸、僵硬车架和轻便的需求，更是Moulton自行车标志性结构，稳定进化发展至今的重要里程碑。</p><p>
+1980年，Moulton自行车的新空间车架自行车已达到了一个最佳阶段，并于1983年推出再次赢得高度好评——AM7作为旅行自行车，被自行车旅游协会授予最高荣誉。</p><p>
+1985年，Moulton自行车打破了原来的穆尔顿“F”车架模式，与空气动力学家Doug Milliken合作，开始逐渐展示出其概念的性能优势。</p><p>
+1986年，Jim Glover驾驶这辆自行车以每小时51英里的速度飞跃了200米，创造了迄今为止仍是世界最佳速度纪录的神话。</p><p>
+1988年，轻量化的车架结构设计与20寸车轮的“AM”,被誉为第一部全避震山地自行车。</p><p>
+1989年，继“AM”车手Dave Bogdan在大赛中成功横跨美洲。同年9月,AM又在一年一度的Moulton自行车俱乐部会集成功推出了非赛车版AM-SPEED，也是Moulton在当时最轻盈的一款自行车。</p><p>
+2000年，Moulton自行车推出与日本巨头Bridgestone合作的‘Bridgestone-Moulton’自行车，与众多Moulton自行车爱好者共同见证这一重要的“世纪之交”。（文字参考来源：上海青年）</p>
+                                
+                                <center id="pagenav">
+                                    </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+                                        
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren">
+                                                        </a><a class="jiathis_button_kaixin001"></a><a href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                        charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="float: right; width: 60px; font-size: 12px;">
+                                        分享至：</div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+                                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;">
+                                    &nbsp;&nbsp;猜您喜欢的文章
+                                </div>
+                                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/175.html" target="_blank"><img src="/uploads/allimg/140206/136.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">车友改装：GIOS Antico 20寸钢架小轮径公路车</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/176.html" target="_blank"><img src="/uploads/allimg/140206/134.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">撒哈拉之旅 STRiDA Régis Fender Sahara限量</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/187.html" target="_blank"><img src="/uploads/allimg/140206/148.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">开箱照：铝合金超轻 Tyrell FX 20寸小轮车蓝</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/178.html" target="_blank"><img src="/uploads/allimg/140206/138.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">KHS功学社日版小径车 Manhattan m451R</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/185.html" target="_blank"><img src="/uploads/allimg/140206/141.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">5月19日将在伦敦举行Brompton城市挑战赛活动</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/189.html" target="_blank"><img src="/uploads/allimg/140206/151.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">利落线条 骚绿ALEXMOULTON AM20-2</span></a></li>
+           
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+          <!-- Comment BEGIN -->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+
+          <!--  Comment END --> 
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+                
+                </div>
+                <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg">
+                    <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+                        <span class="textcontainer"><span class="votecount26536">0</span></span> <span class="bartext voteid26536"><a href="#"
+                                id="aZanImg" onclick="javascript:postDigg('good',194)"></a></span><span class="text" id="spanZan">赞</span>
+                        <span class="text love">人</span>
+                    </div>
+
+
+                </div>
+  <script language="javascript" type="text/javascript">getDigg(194);</script>
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/184.html" target="_blank"><img src="/uploads/allimg/140206/146.jpg" width="83" title="英式折叠车Brompton Junction 上海旗舰店" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/184.html" target="_blank" title="英式折叠车Brompton Junction 上海旗舰店">英式折叠车Brompton Junction 上海旗舰店</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/199.html" target="_blank"><img src="/uploads/allimg/140206/159.jpg" width="83" title="Brompton小布2012女王纪念版" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/199.html" target="_blank" title="Brompton小布2012女王纪念版">Brompton小布2012女王纪念版</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/192.html" target="_blank"><img src="/uploads/allimg/140206/150.jpg" width="83" title="动手做一台可折叠的死飞车" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/192.html" target="_blank" title="动手做一台可折叠的死飞车">动手做一台可折叠的死飞车</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/166.html" target="_blank"><img src="/uploads/allimg/140206/127.jpg" width="83" title="BWC2012探班：全球骑Brompton的潮人们" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/166.html" target="_blank" title="BWC2012探班：全球骑Brompton的潮人们">BWC2012探班：全球骑Brompton的潮人们</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/162.html" target="_blank"><img src="/uploads/allimg/140206/122.jpg" width="83" title="Tern Verge S11i获得台湾车展全场创新设计奖" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/162.html" target="_blank" title="Tern Verge S11i获得台湾车展全场创新设计奖">Tern Verge S11i获得台湾车展全场创新设计奖</a></div>
+</li>
+
+
+
+</ul>
+                </div>
+            
+                <div class="widget" style="margin-bottom: 0px;margin-top:5px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+               
+                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_single.js"></script>
+  
+    <script type='text/javascript' src='/blog4/xunmoban/js/jquery.colorbox-min.js?ver=1.3.17.2'></script>
+
+
+    </div>
+
+    
+  <div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/aboutus.html">关于我们</a></li>
+                <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157">
+                    <a href="/contact.html">联络我们</a></li>
+                <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158">
+                    <a href="/tougao.html">我要投稿</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &copy; 2002-2014 xunmoban.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/">
+                粤ICP备88888888号</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+
+ 
+</body>
+</html>

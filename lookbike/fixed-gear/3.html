@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa_宽屏大气博客文章类织梦模板-zhanoo.com</title>
+<meta name="keywords" content="Factory,View,探访,自行车,工厂,理性,坚持,N" />
+<meta name="description" content=" 与其说工厂，不如说这里是Nagasawa的私人工作室(Workshop)。工作室位于大阪东部郊区的一个小山旁，从门口看去像一座小堡垒。 " />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+<script src="/xunmoban/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/article.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script>
+ 
+</head>
+<body class="single2">
+   <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="宽屏大气博客文章类织梦模板-zhanoo.com">宽屏大气博客文章类织梦模板-zhanoo.com</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+<li><a href="/lookbike/">单车分类</a>
+<ul>
+
+<li><a href="/lookbike/fixed-gear/">死飞车</a></li>
+
+<li><a href="/lookbike/vintagebicycle/">复古骑行</a></li>
+
+<li><a href="/lookbike/roadbicycle/">公路车</a></li>
+
+<li><a href="/lookbike/mountainbike/">山地车</a></li>
+
+<li><a href="/lookbike/small/">折叠/小径车</a></li>
+
+<li><a href="/lookbike/bmx/">BMX</a></li>
+
+<li><a href="/lookbike/otherbike/">城市车及其他</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/gear/">骑行装备</a>
+<ul>
+
+<li><a href="/gear/accessories/">车身装备</a></li>
+
+<li><a href="/gear/rs/">人身装备</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/life/">单车生活</a>
+
+
+
+
+
+ </li2><li><a href="/news/">行业资讯</a>
+
+
+
+
+
+ </li2>
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+    <div id="wrapper">
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;">
+                    <div class="path"><a href='/'>主页</a> > <a href='/lookbike/'>单车分类</a> > <a href='/lookbike/fixed-gear/'>死飞车</a> > </div>
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：2014-02-05 21:29编辑：xunmoban.com</p>
+                            </div>
+                            <div class="div-content">
+                               
+                                <p>
+                                    <p style="text-align: center;"><strong><img src="http://www.700bike.com/upload/2013/12/201312301146501639.jpg" alt="" /><br /></strong></p><p><strong>一、 理性的魅力</strong></p><p>圣诞刚过，商家又开始了年末新一轮促销了互动，貌似近两个月以来的主题都在被“打折”这两个字，强势占据，天猫，淘宝铺天盖地的广告，还有邮箱里面美国发来的Black Friday促销信息。比较起来，可能美国感恩节后的那个周末和我们这些自行车爱好者的关系要更大一些，至少，在这天，Chrome的所有产品20%OFF，Cadence的衣服8折，还有Leader，MASH，Trek，Bianchi等等，一年之中鲜有折扣的这些牌子都给出了难得的折扣。</p><p>但是，也有不给的，比如Patagonia。 在Black Friday 这天用“庆祝旧衣服”这样的活动代替了折扣，你可以选择把你的旧冲锋衣裤拿到店里，Patagonia免费教你如何修补，从而让它们陪你更久？</p><p>在大家用尽一切办法销售自己产品的当下，突然有人站出来说：“嗨，在大家购买新的商品之前，不如让我们来珍惜一下现在所拥有的吧。” 这是多么难得的理性声音！</p><p>我们这次Factory View介绍的工厂Nagasawa，可以说就是这种声音的典范。</p><p><span style="font-weight: bold;">二、工厂or花园</span></p><p>与其说工厂，不如说这里是Nagasawa的私人工作室(Workshop)。工作室位于大阪东部郊区的一个小山旁，从门口看去像一座小堡垒，你可以看到挂着的半成品车架，散落的自行车的零件，还有各种尺寸的制造工具。除了门上Nagasawa的贴纸，这里与日本大多数手工车架制造商并无太大区别。从70年代开始，许多经典优秀的车架就是从这个工作室中源源不断的被制造出来。</p><p><img src="http://www.700bike.com/upload/2013/12/201312301147538500.jpg" alt="" /><br /></p><p>从当年保存下来的报纸中，可以看到这里以前的样子，推开门，绕过堆在一旁的轮组，低头避过头顶的车架，这里要比想象中宽敞很多。</p><p><img src="http://www.700bike.com/upload/2013/12/201312301148106805.jpg" alt="" /><br /></p><p><img src="http://www.700bike.com/upload/2013/12/20131230114901426.jpg" alt="undefined" align="undefined" width="undefined" height="undefined" border="undefined" vspace="undefined" hspace="undefined" />&nbsp;<img src="http://www.700bike.com/upload/2013/12/201312301149015078.jpg" alt="undefined" align="undefined" width="undefined" height="undefined" border="undefined" vspace="undefined" hspace="undefined" />&nbsp;<img src="http://www.700bike.com/upload/2013/12/201312301149021390.jpg" alt="undefined" align="undefined" width="undefined" height="undefined" border="undefined" vspace="undefined" hspace="undefined" />&nbsp;<img src="http://www.700bike.com/upload/2013/12/201312301149045177.jpg" alt="undefined" align="undefined" width="undefined" height="undefined" border="undefined" vspace="undefined" hspace="undefined" /><br /></p><p>对比从前，除了东西越堆越多以外，工作室近三十年来，并没有太大变化。一人，双手，管材，机器，这里像是车架的温室花园。从“播种”，“浇灌”到“长成”，每一道工序，都按照这里的时间序列在进行，不慢不急，相对于制造，车架更像是在生长。因为这里与工厂的根本区别在于，机器是由外力驱动的，程序化的完成规定好的每一个步骤，而花园则是自然生长，其能量来自于它自身。就仿佛生命不能被给予，只能被发现一样，所以Nagasawa的每一件产品都是独一无二的。</p><p><strong>三、舒适空间</strong></p><p><strong><img src="http://www.700bike.com/upload/2013/12/201312301149212503.jpg" alt="" /><br /></strong></p><div style="text-align: center;">黑板</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/201312301149311241.jpg" alt="" /><br /></div><div style="text-align: center;"><br /></div><div style="text-align: center;">订单</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/201312301149455169.jpg" alt="" /><br /></div><div style="text-align: center;"><br /></div><div style="text-align: center;">工作架</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/201312301150023907.jpg" alt="" /><br /></div><p style="text-align: center;">Yoshiaki Nagasawa</p><p>当走进工作室的时候，Nagasawa正在进行车架的焊接，他的全部注意力都集中手中的车架上，好像没有事情可以叫他在完成前停下来。这让我想起几天前和朋友讨论的舒适空间这个状态。</p><p>每一个人的心中，都有一个舒适空间，这个空间内的自己是非常自我的，不愿意被打扰，不愿意被push，不愿意按照别人的要求做事。但对于大多数人，当自我的舒适空间和社会相处碰撞的时候，我们往往会选择逃避或者妥协，其结果就是变成芸芸众生之中的一员，大部分的时间在混浑浑噩噩之中度过。而在观看Nagasawa手工制作车架的过程中，每一个人都由参观者变成了观众，仿佛深置身于属于Nagasawa自己的舒适空间之中，看着他如何焊接，如何操作，如何将那些平凡的事物提升到另一境界，除了感叹，还有羡慕，羡慕他可以如此执着的做着自己喜欢的事情，羡慕他可以做的如此之好。</p><p>可以在大堆的现实事物之中，找出特定的主体，并聚焦其上，这恐怕是大师与普通的工匠之间最大的区别。</p><p><img src="http://www.700bike.com/upload/2013/12/201312301150207769.jpg" alt="" /><br /></p><p><strong>四，意大利情节</strong></p>和传统的工厂的工作时间相反，Nagasawa喜欢整夜整夜的呆在自己的工作室中，熬夜工作。这源于他曾经在意大利De Rosa自行车工厂的学习经历，以及深受意大利自行车文化影响的意大利情节。所以到现在他仍然习惯过着意大利的时区工作。工作室里意大利的东西，配件更是到处都是。<p style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/201312301153036780.jpg" alt="" /><br /></p><div style="text-align: center;">来自Campagnolo的礼物，极其罕见。</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/201312301153144895.jpg" alt="" /><br /></div><div style="text-align: center;"><br /></div><div style="text-align: center;">意式的牙盘</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/20131230115420252.jpg" alt="" /><br /></div><div style="text-align: center;"><br /></div><div style="text-align: center;">随处可见的Campagnolo零件。</div><div style="text-align: center;"><br /></div><div style="text-align: center;"><img src="http://www.700bike.com/upload/2013/12/201312301154308641.jpg" alt="" /><br /></div><p>Nagasawa的儿子也已经在工作室工作，除了需要完成日常的制作工序之外，还负责处理一些工作室的杂物，洽谈合作等等。虽然他已经在工作室工作了很久，但真正出师还有很长的路要走，日本的师徒制度中，除非徒弟得到了师傅的认可，否则就要以学徒的身份一直学习下去，这样的规矩即使是父子也得遵守。在纪录片《寿司之神》当中，中泽野在师傅小野门下学习了整整11年，才得到师傅的首肯，出师，成为“职人”。除了执着和热爱，还需要无比的耐心。</p><p>耐心是一种力量，没有它，我们就会被身边的琐事，被周围的人群，还有手机，电脑，社交网络分散掉自己全部的注意力。在自己的心里明确一件自己真正热爱的事情或者事业，一点点积累，只要这件事是踏实的，未来就仿佛会更清晰一点。做个有心人，让时间成为你的助手，别让它苍白流失。</p><p><img src="http://www.700bike.com/upload/2013/12/201312301154498649.jpg" alt="" /><br /></p> <br />工作之外的Nagasawa也是个爱喝烧酒，喜欢吃烧烤的普通日本欧吉桑。喝醉了会说胡话，对制作出的车架不满意的时候也会发脾气，Nagasawa车架神奇的奥秘，实际上就是用着理性的手法和执着的态度，完成了所有感性的创作。<br /> <br />一年年末，工作异常繁忙，导致文章更新太慢，在此向大家道个歉。相比以前，这一年我忍住没有购买新的自行车零件，只是换了一次把带还有两条新轮胎而已，但是却骑了比之前更久的车，而且自行车骑起来越来越顺手，也越骑越舒服。曾经纠结过的坐垫不合适，把立太长太短等问题，全部自动的消失了，从实用角度出发，更多的消费可以带来更好的使用体验，这绝对是一个伪命题，购买不过满足的是你想买东西的这个欲望而已。换个角度来看，周围的促销打折的吆喝声，本质上和国贸地铁口黑车司机的吆喝并没有多大区别，如果你清楚的知道自己不需要打黑车，那他们根本影响不了你。<br /> <br />新的一年，希望理性可以帮助我们避免犯更多的错误和麻烦，珍惜曾经被过多浪费过的自己的精力还有时间，执着地守着自己的步序，在繁忙的生活中，认真做好自己喜欢的事。希望大家的心态，都可以像切.米沃什的诗——《礼物》中写的那样安静且平和。<br /><br />如此幸福的一天，雾一早就散了。<br />我在花园里干活，看蜂鸟停在忍冬花上。<br />这世上没有一样东西我想占有。<br />我知道没有一个人值得我羡慕。<br />任何我曾遭受的不幸，我都已忘记。<br />想到故我今我同为一人并不使我难为情。<br />在我身上没有痛苦。<br />直起腰来，我望得见蓝色的大海和船帆。<br /> <br />——切.米沃什《礼物》<br /><p>祝大家新年快乐。</p><p><strong>(文：陈帅 转载请注明来自700BIKE.COM)</strong></p> <img src="http://www.700bike.com/upload/2013/12/201312301154568351.jpg" alt="" /><br /></p>
+                                
+                                <center id="pagenav">
+                                    </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+                                        
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren">
+                                                        </a><a class="jiathis_button_kaixin001"></a><a href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                        charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="float: right; width: 60px; font-size: 12px;">
+                                        分享至：</div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+                                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;">
+                                    &nbsp;&nbsp;猜您喜欢的文章
+                                </div>
+                                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/20.html" target="_blank"><img src="/uploads/allimg/140205/18.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">#CES展上的新玩意#  视觉利器 GUNNAR Optiks</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/39.html" target="_blank"><img src="/uploads/allimg/140205/39.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[大视野] 固齿公开赛新增街区竞速赛 现场惊险</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/36.html" target="_blank"><img src="/uploads/allimg/140205/36.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">Cycle Messenger World Championships 2013  </span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/12.html" target="_blank"><img src="/uploads/allimg/140205/11.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">街拍：北美第二大的野猫赛 纽约Monstertrack</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/2.html" target="_blank"><img src="/uploads/allimg/140205/1.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[Factory View] 探访自行车工厂 ⑤：大阪涂装</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/10.html" target="_blank"><img src="/uploads/allimg/140205/12.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">Heavy Pedal推出死飞车架Zephyr</span></a></li>
+           
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+          <!-- Comment BEGIN -->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+
+          <!--  Comment END --> 
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+                
+                </div>
+                <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg">
+                    <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+                        <span class="textcontainer"><span class="votecount26536">0</span></span> <span class="bartext voteid26536"><a href="#"
+                                id="aZanImg" onclick="javascript:postDigg('good',3)"></a></span><span class="text" id="spanZan">赞</span>
+                        <span class="text love">人</span>
+                    </div>
+
+
+                </div>
+  <script language="javascript" type="text/javascript">getDigg(3);</script>
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/40.html" target="_blank"><img src="/uploads/allimg/140205/40.jpg" width="83" title="[大视野] 固齿公开赛现场 全国fixed gear车友单车及装备展示" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/40.html" target="_blank" title="[大视野] 固齿公开赛现场 全国fixed gear车友单车及装备展示">[大视野] 固齿公开赛现场 全国fixed gear车友</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/1.html" target="_blank"><img src="/uploads/allimg/140205/3.jpg" width="83" title="两家柏林品牌Ucon x 8bar携手合作推出的死飞车 ‘federleicht’" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/1.html" target="_blank" title="两家柏林品牌Ucon x 8bar携手合作推出的死飞车 ‘federleicht’">两家柏林品牌Ucon x 8bar携手合作推出的死飞</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/2.html" target="_blank"><img src="/uploads/allimg/140205/1.jpg" width="83" title="[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/2.html" target="_blank" title="[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way">[Factory View] 探访自行车工厂 ⑤：大阪涂装</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/3.html" target="_blank"><img src="/uploads/allimg/140205/2.jpg" width="83" title="[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/3.html" target="_blank" title="[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa">[Factory View] 探访自行车工厂 ④：理性与坚</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/4.html" target="_blank"><img src="/uploads/allimg/140205/6.jpg" width="83" title="专为都市夜骑设计 ICE COLD NY 2013 秋冬系列" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/4.html" target="_blank" title="专为都市夜骑设计 ICE COLD NY 2013 秋冬系列">专为都市夜骑设计 ICE COLD NY 2013 秋冬系列</a></div>
+</li>
+
+
+
+</ul>
+                </div>
+            
+                <div class="widget" style="margin-bottom: 0px;margin-top:5px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+               
+                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_single.js"></script>
+  
+    <script type='text/javascript' src='/blog4/xunmoban/js/jquery.colorbox-min.js?ver=1.3.17.2'></script>
+
+
+    </div>
+
+    
+  <div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/aboutus.html">关于我们</a></li>
+                <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157">
+                    <a href="/contact.html">联络我们</a></li>
+                <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158">
+                    <a href="/tougao.html">我要投稿</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &copy; 2002-2014 xunmoban.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/">
+                粤ICP备88888888号</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+
+ 
+</body>
+</html>

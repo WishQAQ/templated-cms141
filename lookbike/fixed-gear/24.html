@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>[Factory View] 探访自行车工厂②：日本坐垫工厂Kashimax的骑士_宽屏大气博客文章类织梦模板-zhanoo.com</title>
+<meta name="keywords" content="Factory,View,探访,自行车,工厂,日本,坐垫,K" />
+<meta name="description" content=" 在自行车的世界里，生产Kashimax的工厂，不过只是整条产业之中的一个环节。说到骑士们的其他装备，当然还有手工的钢架，帅气的涂装，前倾的破风车把以及把立等等。 " />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+<script src="/xunmoban/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/article.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script>
+ 
+</head>
+<body class="single2">
+   <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="宽屏大气博客文章类织梦模板-zhanoo.com">宽屏大气博客文章类织梦模板-zhanoo.com</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+<li><a href="/lookbike/">单车分类</a>
+<ul>
+
+<li><a href="/lookbike/fixed-gear/">死飞车</a></li>
+
+<li><a href="/lookbike/vintagebicycle/">复古骑行</a></li>
+
+<li><a href="/lookbike/roadbicycle/">公路车</a></li>
+
+<li><a href="/lookbike/mountainbike/">山地车</a></li>
+
+<li><a href="/lookbike/small/">折叠/小径车</a></li>
+
+<li><a href="/lookbike/bmx/">BMX</a></li>
+
+<li><a href="/lookbike/otherbike/">城市车及其他</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/gear/">骑行装备</a>
+<ul>
+
+<li><a href="/gear/accessories/">车身装备</a></li>
+
+<li><a href="/gear/rs/">人身装备</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/life/">单车生活</a>
+
+
+
+
+
+ </li2><li><a href="/news/">行业资讯</a>
+
+
+
+
+
+ </li2>
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+    <div id="wrapper">
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;">
+                    <div class="path"><a href='/'>主页</a> > <a href='/lookbike/'>单车分类</a> > <a href='/lookbike/fixed-gear/'>死飞车</a> > </div>
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>[Factory View] 探访自行车工厂②：日本坐垫工厂Kashimax的骑士</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：2014-02-05 21:29编辑：xunmoban.com</p>
+                            </div>
+                            <div class="div-content">
+                               
+                                <p>
+                                    <p><img src="http://www.700bike.com/upload/2013/11/201311251053129273.jpg" alt="" /></p><p><strong>（文：陈帅 转载请注明来自：700bike.com）</strong><br /></p><p><strong>它是仅存的NJS坐垫工厂</strong></p><p>    借用大名鼎鼎的门把手制作公司FSB曾经为门把手设计的几条规则：1：一个门把手必须有放置拇指的地方。2：放食指的地方必须有一个浅坑。3：大拇指的鱼际肌必须有可以依靠的地方。4：手上必须有体积感。</p><p>    对于制作一个自行车的坐垫来说，它需要：1：有一个可以叫屁股舒服的放着的地方。2：屁股中间的隐私部位必须有一个支撑。3：双腿内侧的大收肌必须欧一个依靠的地方。4：臀部必须有体积感。</p><p>    不过，对于日本的坐垫工厂Kashimax来说，有一个规则显然更重要，那就是“RACE”竞速。毕竟他是目前仅存的一家还在为竞轮（Keirin）选手生产NJS坐垫的工厂。<br /> <br /><strong>日本NJS竞轮——Keirin赛</strong></p><p>    为了大家可以更好的了解Kashimax的制作精髓，顺便也与大家分享一下日本竞轮的相关知识。<br /> <br />    竞轮也称Keirin赛，是赛道场内自行车竞赛的通称。我们在奥运会上看到的场内自行车比赛也是竞轮的一种。在日本，竞轮早已成为一项非常成熟的运动，有超过50个专业的竞赛场地，每年吸引超过两千万观众观赏，以及超过1.5兆日元的比赛赌金。竞轮的在日本人民的心中，代表着其对完美与传统的追求，是一种独特而又魅力十足的运动<br /> <br />    每场比赛，有九名选手，身着各种鲜艳的衣着和编号，在标准的竞赛跑道里，每场比赛骑行大约2公里，平均时速50公里，抵达终点的时速要超过70公里。选手们身上彩虹般的衣服，是为了方便场外的观众下注，利用和赛马一样的赌博，来筹措资金，借以维持运动以及相关产业的发展。<br /></p><p><img src="http://www.700bike.com/upload/2013/11/201311251100159870.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251100208707.jpg" alt="" /><br /></p><p>比赛一开始，所有选手会跟随身着紫橘相间的前导，一直到速度提升至平均值，前导才会离开赛道。<br /> <br />    另一方面，为了确保竞赛的公平性，以及竞轮在日本传统运动中的尊贵地位。对赛场上的选手和装备都有着极其严格的要求。比如，选手需要通过武士道般的规矩和折磨人的训练。对于比赛用的自行车，更是有着严格到苛刻的标准，所有可以进入赛道的单车零件，都必须要经过日本自行车振兴会（Nihon Jitensha Shinkokai）的认证，而这也正是NJS这个标志的由来。<br /></p><p><img src="http://www.700bike.com/upload/2013/11/201311251101279364.jpg" alt="" /><br /></p><p>这个认证在确保了公平竞赛的同时，也夹杂着一些日本人对于某些传统的坚持，以及对完美的执着。所有打上NJS印记的产品，虽然未必能代表先进的科学和技术，但每一件都可以被认为完美的工匠工艺品。正式因为这样，生产NJS产品的厂商需要经过严苛的标准检验。从Nitto，Sugino，MKS到Suntour，具备NJS认证资格的自行车零件制造商十个手指就可以数完。<br /> <br /><strong>Kashimax工厂一览</strong></p><p>Kashimax做为目前唯一的NJS坐垫生产商，同样具有着悠久的历史，工厂成立于1936年，厂址位于大阪。所有竞轮选手使用的Five Gold坐垫都是由少数熟练的工人手工制作而成，每一个坐垫都必须经过严格的NJS的制作标准检验。<br /></p><p><img src="http://www.700bike.com/upload/2013/11/201311251102525061.jpg" alt="" /><br /></p><p>左上后面的墙上，是Kashimax工厂鼎盛时期的样子。那时，除了为竞轮生产坐垫，他还生产了世界上最出名的BMX小轮车坐垫AERO。<br /></p><p><img src="http://www.700bike.com/upload/2013/11/20131125110442410.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251104503284.jpg" alt="" /><br /></p><p>现在的工厂大门。在现在的Kashimax制作工厂，一切都按照最简单的逻辑运转着。他们坚持手工，使用最好的皮子（如下图），因为他们心里很清楚，手下的坐垫并不是为了长距离骑行或者休闲而生产的。<br /></p><p><img src="http://www.700bike.com/upload/2013/11/201311251105208417.jpg" alt="" /><br /></p><p style="text-align: center;">各种颜色的皮质材料。<br /></p><p style="text-align: center;"><img src="http://www.700bike.com/upload/2013/11/201311251105478442.jpg" alt="" /><br /></p><p style="text-align: left;">工作室内的墙上插着必胜的旗子，在那个鼎盛的时代，中野浩一在（1977-1986）10年蝉联世界Sprint赛事冠军时的坐垫就是Kashimax的。<br /></p><p style="text-align: center;"><img src="http://www.700bike.com/upload/2013/11/201311251106584164.jpg" alt="" /></p><p style="text-align: center;">这间工作室是大多数Kashimax坐垫被塑形的地方</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107007404.jpg" alt="" /></p><p style="text-align: center;">工人们至今仍然在榻榻米上工作。</p><p style="text-align: left;"><strong>以下是Kashimax坐垫生产的详细过程：</strong><br /></p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107025975.jpg" alt="" /></p><p style="text-align: center;">裁皮。</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107048707.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107059156.jpg" alt="" /></p><p style="text-align: center;">坐垫底肧的制作。</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107062944.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107088176.jpg" alt="" /></p><p style="text-align: center;">皮料再加工，粘底肧。</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107093608.jpg" alt="" /></p><p style="text-align: center;">坐垫雏形。</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107105211.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107129040.jpg" alt="" /></p><p style="text-align: center;">打磨，深度加工。</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107156016.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107161473.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107172977.jpg" alt="" /></p><p style="text-align: center;">最后也是最关键的一个步骤——添加NJS的LOGO。</p><p style="text-align: center;">&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107192894.jpg" alt="" />&nbsp;<img src="http://www.700bike.com/upload/2013/11/201311251107217021.jpg" alt="" /></p><p style="text-align: center;">完成并装箱。<br /></p><embed src="http://player.youku.com/player.php/sid/XNjM3NTExMzgw/v.swf" allowfullscreen="true" quality="high" width="800" height="600" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash" /><p style="text-align: center;">KASHIMAX Promotion Film日本死飞坐垫的制作<br /></p><p style="text-align: left;"><strong>Kashimax的骑士精神 &nbsp;&nbsp;</strong></p><p style="text-align: left;">在自行车的世界里，生产Kashimax的工厂，不过只是整条产业之中的一个环节。说到骑士们的其他装备，当然还有手工的钢架，帅气的涂装，前倾的破风车把以及把立等等。就如同，谈起中古世纪的骑士，大家的印象里，那些骑士们帅气的装备，高大的战马，盔甲，长矛，重剑一样。这些装备保护着他们的身体，庇护着他们的精神。<br /> <br />    而且，即使是从精神上说，专业的骑手和古代的骑士们也有着相同的品质，比如荣誉，比如英勇，比如公正等等。每一个竞轮的骑手，在比赛前三天，调校好赛车之后，禁止与外界接触，以确保不会有任何外力干扰比赛的结果。<br /> <br />   那些有志向往赛道发展的年轻人，在经历严格的筛选通过考核进入竞轮学校后的第一课，需要庄重宣誓，以坚守比赛的公平和自己的职业操守。我原想找到这段誓言，将它与大家分享。可惜，没有找到。但是我找到了，中世纪每一位准骑士成为一名真正的骑士之前，所需要宣誓的誓言：<br /> <br />“I will be kind to the weak.<br />I will be brave against the strong.<br />I will fight all who do wrong.<br />I will fight for those who cannot fight.<br />I will help those who call me for help.<br />I will harm no woman.<br />I will help my brother knight.<br />I will be true to my friends.<br />I will be faithful in love.”<br /> <br />    在看过这样的宣誓之后，如果你真的热爱自行车这项运动，是会选择简单的做一个车手，还是更愿意将自己变成一个骑士呢？<br /></p></p>
+                                
+                                <center id="pagenav">
+                                    </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+                                        
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren">
+                                                        </a><a class="jiathis_button_kaixin001"></a><a href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                        charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="float: right; width: 60px; font-size: 12px;">
+                                        分享至：</div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+                                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;">
+                                    &nbsp;&nbsp;猜您喜欢的文章
+                                </div>
+                                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/2.html" target="_blank"><img src="/uploads/allimg/140205/1.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[Factory View] 探访自行车工厂 ⑤：大阪涂装</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/36.html" target="_blank"><img src="/uploads/allimg/140205/36.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">Cycle Messenger World Championships 2013  </span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/10.html" target="_blank"><img src="/uploads/allimg/140205/12.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">Heavy Pedal推出死飞车架Zephyr</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/20.html" target="_blank"><img src="/uploads/allimg/140205/18.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">#CES展上的新玩意#  视觉利器 GUNNAR Optiks</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/39.html" target="_blank"><img src="/uploads/allimg/140205/39.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[大视野] 固齿公开赛新增街区竞速赛 现场惊险</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/12.html" target="_blank"><img src="/uploads/allimg/140205/11.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">街拍：北美第二大的野猫赛 纽约Monstertrack</span></a></li>
+           
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+          <!-- Comment BEGIN -->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+
+          <!--  Comment END --> 
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+                
+                </div>
+                <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg">
+                    <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+                        <span class="textcontainer"><span class="votecount26536">0</span></span> <span class="bartext voteid26536"><a href="#"
+                                id="aZanImg" onclick="javascript:postDigg('good',24)"></a></span><span class="text" id="spanZan">赞</span>
+                        <span class="text love">人</span>
+                    </div>
+
+
+                </div>
+  <script language="javascript" type="text/javascript">getDigg(24);</script>
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/40.html" target="_blank"><img src="/uploads/allimg/140205/40.jpg" width="83" title="[大视野] 固齿公开赛现场 全国fixed gear车友单车及装备展示" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/40.html" target="_blank" title="[大视野] 固齿公开赛现场 全国fixed gear车友单车及装备展示">[大视野] 固齿公开赛现场 全国fixed gear车友</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/1.html" target="_blank"><img src="/uploads/allimg/140205/3.jpg" width="83" title="两家柏林品牌Ucon x 8bar携手合作推出的死飞车 ‘federleicht’" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/1.html" target="_blank" title="两家柏林品牌Ucon x 8bar携手合作推出的死飞车 ‘federleicht’">两家柏林品牌Ucon x 8bar携手合作推出的死飞</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/2.html" target="_blank"><img src="/uploads/allimg/140205/1.jpg" width="83" title="[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/2.html" target="_blank" title="[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way">[Factory View] 探访自行车工厂 ⑤：大阪涂装</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/3.html" target="_blank"><img src="/uploads/allimg/140205/2.jpg" width="83" title="[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/3.html" target="_blank" title="[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa">[Factory View] 探访自行车工厂 ④：理性与坚</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/4.html" target="_blank"><img src="/uploads/allimg/140205/6.jpg" width="83" title="专为都市夜骑设计 ICE COLD NY 2013 秋冬系列" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/4.html" target="_blank" title="专为都市夜骑设计 ICE COLD NY 2013 秋冬系列">专为都市夜骑设计 ICE COLD NY 2013 秋冬系列</a></div>
+</li>
+
+
+
+</ul>
+                </div>
+            
+                <div class="widget" style="margin-bottom: 0px;margin-top:5px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+               
+                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_single.js"></script>
+  
+    <script type='text/javascript' src='/blog4/xunmoban/js/jquery.colorbox-min.js?ver=1.3.17.2'></script>
+
+
+    </div>
+
+    
+  <div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/aboutus.html">关于我们</a></li>
+                <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157">
+                    <a href="/contact.html">联络我们</a></li>
+                <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158">
+                    <a href="/tougao.html">我要投稿</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &copy; 2002-2014 xunmoban.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/">
+                粤ICP备88888888号</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+
+ 
+</body>
+</html>

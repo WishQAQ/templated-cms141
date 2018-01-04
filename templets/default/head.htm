@@ -1,0 +1,87 @@
+ <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="{dede:global.cfg_webname/}">{dede:global.cfg_webname/}</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+{dede:channelartlist typeid='top'}
+<li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+{dede:php}
+$thisid = $refObj->Fields['id'];
+$dsql->SetQuery("Select * from `dede_arctype` where reid=".$thisid." ORDER BY sortrank");
+$dsql->Execute();
+$i=0;
+while($arr = $dsql->getArray()){
+$i = $i +1;
+$str = implode(',',$arr);
+if(!empty($str) && $i==1){
+	echo '<ul>'; 
+}
+}
+{/dede:php}
+{dede:channel type='son'}
+<li><a href="[field:typeurl/]">[field:typename/]</a></li>
+{/dede:channel}
+
+{dede:php}
+$thisid = $refObj->Fields['id'];
+$dsql->SetQuery("Select * from `dede_arctype` where reid=".$thisid." ORDER BY sortrank");
+$dsql->Execute();
+while($arr = $dsql->getArray()){
+$str = implode(',',$arr);
+}
+if(!empty($str)) echo '</ul>';
+{/dede:php}
+
+ </li2>
+{/dede:channelartlist}
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>

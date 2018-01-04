@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Tyrell唯一的折叠小径车Tyrell FX_宽屏大气博客文章类织梦模板-zhanoo.com</title>
+<meta name="keywords" content="Tyrell,唯一,折叠,小径,来自,日本,Tyrell,公" />
+<meta name="description" content=" 来自日本的Tyrell公司一直以生产高端轻量化小径车和顶级零配件著称，除了像AM-7这样的顶级小径车轮组，Tyrell的整车更是实力非凡，旗下产品诸如采用钛合金车架的20寸451轮组的“PK”系... " />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+<script src="/xunmoban/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/article.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script>
+ 
+</head>
+<body class="single2">
+   <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="宽屏大气博客文章类织梦模板-zhanoo.com">宽屏大气博客文章类织梦模板-zhanoo.com</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+<li><a href="/lookbike/">单车分类</a>
+<ul>
+
+<li><a href="/lookbike/fixed-gear/">死飞车</a></li>
+
+<li><a href="/lookbike/vintagebicycle/">复古骑行</a></li>
+
+<li><a href="/lookbike/roadbicycle/">公路车</a></li>
+
+<li><a href="/lookbike/mountainbike/">山地车</a></li>
+
+<li><a href="/lookbike/small/">折叠/小径车</a></li>
+
+<li><a href="/lookbike/bmx/">BMX</a></li>
+
+<li><a href="/lookbike/otherbike/">城市车及其他</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/gear/">骑行装备</a>
+<ul>
+
+<li><a href="/gear/accessories/">车身装备</a></li>
+
+<li><a href="/gear/rs/">人身装备</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/life/">单车生活</a>
+
+
+
+
+
+ </li2><li><a href="/news/">行业资讯</a>
+
+
+
+
+
+ </li2>
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+    <div id="wrapper">
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;">
+                    <div class="path"><a href='/'>主页</a> > <a href='/lookbike/'>单车分类</a> > <a href='/lookbike/small/'>折叠/小径车</a> > </div>
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>Tyrell唯一的折叠小径车Tyrell FX</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：2014-02-06 17:25编辑：xunmoban.com</p>
+                            </div>
+                            <div class="div-content">
+                               <p>
+	<img alt="" class="alignnone size-full wp-image-5995" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9708.jpg" title="DSC_9708" width="1200" /></p>
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6022" height="416" src="http://www.700bike.com/wp-content/uploads/2012/07/FX.jpg" title="FX" width="1027" /> <img alt="" class="alignnone size-full wp-image-5996" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9709.jpg" title="DSC_9709" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-5997" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9710.jpg" title="DSC_9710" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-5998" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9714.jpg" title="DSC_9714" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-5999" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9715.jpg" title="DSC_9715" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6000" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9717.jpg" title="DSC_9717" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6001" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9718.jpg" title="DSC_9718" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6002" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9721.jpg" title="DSC_9721" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6003" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9727.jpg" title="DSC_9727" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6004" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9732.jpg" title="DSC_9732" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6005" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9734.jpg" title="DSC_9734" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6006" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9735.jpg" title="DSC_9735" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6007" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9737.jpg" title="DSC_9737" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6008" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9739.jpg" title="DSC_9739" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6010" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9741.jpg" title="DSC_9741" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6011" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9742.jpg" title="DSC_9742" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6012" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9744.jpg" title="DSC_9744" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6013" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9746.jpg" title="DSC_9746" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6014" height="1200" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9748.jpg" title="DSC_9748" width="799" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6015" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9749.jpg" title="DSC_9749" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6016" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9750.jpg" title="DSC_9750" width="1200" />
+<p>
+	&nbsp;</p>
+<img alt="" class="alignnone size-full wp-image-6017" height="799" src="http://www.700bike.com/wp-content/uploads/2012/07/DSC_9754.jpg" title="DSC_9754" width="1200" />
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	来自日本的Tyrell公司一直以生产高端轻量化小径车和顶级零配件著称，除了像AM-7这样的顶级小径车轮组，Tyrell的整车更是实力非凡，旗下产品诸如采用钛合金车架的20寸451轮组的&ldquo;PK&rdquo;系列车型；采用铝合金碳纤维后三角的传奇型号&ldquo;CSI&rdquo;都在亚洲刮起了一阵&ldquo;小径车风暴&rdquo;而今天我们要为大家着重介绍的就是Tyrell唯一的折叠小径车，有着&ldquo;史上最轻量产小折&rdquo;称号的&mdash;Tyrell FX。</p>
+<p>
+	Tyrell FX采用纵向折叠和一体式&ldquo;空间车架&rdquo;，后三角采用Slant Design全新设计的高刚性折叠机构，通过一个小螺栓固定，折叠时以五通下方为轴心向前折叠，这种设计既保证了车架横向极好的刚性，同时可以将折叠后的体积控制到最小，虽然与一众诸如tikit和小布这样小体格的对手比起折叠大小来还是略逊一筹，但是最大号的航空行李箱完全可以轻松容纳FX，同时由于采用了钪铝合金车架和碳纤维前叉，原厂车的重量更是可以达到惊人的8.9kg！（不含脚踏）</p>
+<p>
+	另外了解Tyrell的朋友肯定知道，Tyrell之所以在日本台湾等地享有很高的赞誉，她独特的设计美学和技术实力都是有目共睹的，尤其是能其打造的&ldquo;AM&rdquo;系列小径轮组，几乎是小径车升级的最终殿堂级产品，此次装备在FX上的AM-3虽然没有高昂的身价，但是出色的性价比和全银色的古典外观绝对配得上&ldquo;最好的小径轮组&rdquo;这一称号，另外介绍一个关于Tyrell的小细节，细心的你可能会注意到Tyrell这个商标几乎出现在每一台车子的所有关键部位上，甚至小到把堵这样的小地方，与很多普及型折叠车标榜&ldquo;名牌零件&rdquo;不同的是，Tyrell可以说除了变速系统和轮胎以外的所有部件都深深打上了Tyrell顶级品质的&ldquo;烙印&rdquo;</p>
+<p>
+	<strong>主要配置：</strong></p>
+<p>
+	车架：AL7046铝合金超轻量车架</p>
+<p>
+	轮毂：20寸（406规格）老：开档前100mm/后130mm</p>
+<p>
+	车身颜色：黑/白/橙/黄/金属灰；前叉：渐变色碳纤维前叉</p>
+<p>
+	传动系统：Shimano Tiagra 4600</p>
+<p>
+	轮胎SCHWALBE DURANO 20&quot;&times;1-1/8</p>
+<p>
+	轮组：Tyrell AM-3</p>
+<p>
+	坐管：Tyrell 6061铝合金 31.6X400mm</p>
+<p>
+	车架质量（不包含前叉）：2.2KG</p>
+<p>
+	（不含踏板）完成车辆重量：8.9公斤</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>远行美车行：</strong></p>
+<p>
+	10年老店，被车友誉为京城第一&ldquo;自行车4S店&rdquo;， Alex Moulton大陆优秀经销商，经营各种高端小径车及骑行单品，在北京骑行爱好者中有良好口碑。</p>
+<p>
+	地址：北京市海淀区中关村东路333号(84-5)</p>
+<p>
+	电话：010-62636086</p>
+<p>
+	<strong>（撰稿及摄影：Mua马 版权所有 共同促进单车文化 转载请注明来自700BIKE）</strong></p>
+
+                                <center id="pagenav">
+                                    </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+                                        
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren">
+                                                        </a><a class="jiathis_button_kaixin001"></a><a href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                        charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="float: right; width: 60px; font-size: 12px;">
+                                        分享至：</div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+                                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;">
+                                    &nbsp;&nbsp;猜您喜欢的文章
+                                </div>
+                                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/175.html" target="_blank"><img src="/uploads/allimg/140206/136.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">车友改装：GIOS Antico 20寸钢架小轮径公路车</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/178.html" target="_blank"><img src="/uploads/allimg/140206/138.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">KHS功学社日版小径车 Manhattan m451R</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/187.html" target="_blank"><img src="/uploads/allimg/140206/148.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">开箱照：铝合金超轻 Tyrell FX 20寸小轮车蓝</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/176.html" target="_blank"><img src="/uploads/allimg/140206/134.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">撒哈拉之旅 STRiDA Régis Fender Sahara限量</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/189.html" target="_blank"><img src="/uploads/allimg/140206/151.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">利落线条 骚绿ALEXMOULTON AM20-2</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/small/185.html" target="_blank"><img src="/uploads/allimg/140206/141.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">5月19日将在伦敦举行Brompton城市挑战赛活动</span></a></li>
+           
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+          <!-- Comment BEGIN -->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+
+          <!--  Comment END --> 
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+                
+                </div>
+                <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg">
+                    <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+                        <span class="textcontainer"><span class="votecount26536">0</span></span> <span class="bartext voteid26536"><a href="#"
+                                id="aZanImg" onclick="javascript:postDigg('good',200)"></a></span><span class="text" id="spanZan">赞</span>
+                        <span class="text love">人</span>
+                    </div>
+
+
+                </div>
+  <script language="javascript" type="text/javascript">getDigg(200);</script>
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/184.html" target="_blank"><img src="/uploads/allimg/140206/146.jpg" width="83" title="英式折叠车Brompton Junction 上海旗舰店" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/184.html" target="_blank" title="英式折叠车Brompton Junction 上海旗舰店">英式折叠车Brompton Junction 上海旗舰店</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/199.html" target="_blank"><img src="/uploads/allimg/140206/159.jpg" width="83" title="Brompton小布2012女王纪念版" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/199.html" target="_blank" title="Brompton小布2012女王纪念版">Brompton小布2012女王纪念版</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/192.html" target="_blank"><img src="/uploads/allimg/140206/150.jpg" width="83" title="动手做一台可折叠的死飞车" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/192.html" target="_blank" title="动手做一台可折叠的死飞车">动手做一台可折叠的死飞车</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/166.html" target="_blank"><img src="/uploads/allimg/140206/127.jpg" width="83" title="BWC2012探班：全球骑Brompton的潮人们" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/166.html" target="_blank" title="BWC2012探班：全球骑Brompton的潮人们">BWC2012探班：全球骑Brompton的潮人们</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/small/162.html" target="_blank"><img src="/uploads/allimg/140206/122.jpg" width="83" title="Tern Verge S11i获得台湾车展全场创新设计奖" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/small/162.html" target="_blank" title="Tern Verge S11i获得台湾车展全场创新设计奖">Tern Verge S11i获得台湾车展全场创新设计奖</a></div>
+</li>
+
+
+
+</ul>
+                </div>
+            
+                <div class="widget" style="margin-bottom: 0px;margin-top:5px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+               
+                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_single.js"></script>
+  
+    <script type='text/javascript' src='/blog4/xunmoban/js/jquery.colorbox-min.js?ver=1.3.17.2'></script>
+
+
+    </div>
+
+    
+  <div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/aboutus.html">关于我们</a></li>
+                <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157">
+                    <a href="/contact.html">联络我们</a></li>
+                <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158">
+                    <a href="/tougao.html">我要投稿</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &copy; 2002-2014 xunmoban.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/">
+                粤ICP备88888888号</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+
+ 
+</body>
+</html>

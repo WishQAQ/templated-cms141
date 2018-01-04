@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+    <script type="text/javascript" src="/xunmoban/js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/jquery.js"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+<script type="text/javascript">
+    function IFocuse(th, o) {
+        var t = $(th);
+        var c = t.attr("class");
+        if (o) {
+            t.removeClass(c).addClass(c+"-over");
+        }
+        else {
+            t.removeClass(c).addClass(c.replace("-over",""));
+        }
+    }
+</script>
+</head>
+<body class="xh_body">
+{dede:include filename="head_index.htm"/}
+    <div id="xh_wrapper">
+       
+<input type="hidden" id="hdUrlFocus" />
+    <div class="xh_h_show">
+        <div class="xh_h_show_in">
+        <div id="zSlider">
+            <div id="picshow">
+    <div id="picshow_img">
+        <ul>
+{dede:arclist flag='f' limit='0,4' titlelen = '40' addfields='flash' channelid='1'}
+
+<li style="display: list-item;"><a href="[field:arcurl/]" target="_blank">
+                <img src="[field:flash/]" alt="[field:fulltitle/]"></a></li>
+       {/dede:arclist}
+
+
+        </ul>
+    </div>
+</div>
+<div id="select_btn">
+    <ul>
+        <li class="current"></li><li class=""></li><li class=""></li><li class=""></li>
+    </ul>
+</div>
+            <div class="focus-bg-title"><div id="focus-left" class="arrow-left" onmouseover="IFocuse(this,true)" onmouseout="IFocuse(this,false)"></div>
+            <div id="focus-center" class="focus-title">
+            <div style="float:left;width:580px;padding-left:10px;font-size:18px;" id="focus-tl-s"></div>
+            <div style="float:right;width:200px;"></div>
+            </div>
+            <div id="focus-right" class="arrow-right"></div></div>
+            </div>
+            <div id="picshow_right">
+      {dede:arclist flag='a' row='1' orderby='pubdate' titlelen='28' addfields='flash' channelid='1'}
+            <a href="[field:arcurl/]" target="_blank">
+    <img src="[field:flash/]" alt="[field:title/]" width="255px" height="420px"></a>
+    {/dede:arclist}   
+            <div id="picshow_right_cover" onclick="goanewurl()" style="cursor:pointer;position:absolute;top:495px;font-size:14px;width:213px;height:45px;line-height:45px;padding-left:42px;color:#ffffff;zoom:1;background-image:url(/xunmoban/css/img/focus-left-bg.png); background-repeat:no-repeat; background-color:#01A1ED;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="xh_container">
+    <a name="new"></a>
+        <div id="xh_content" style="padding-right:10px;">
+            <div class="xh_area_h_3">
+                <div class="xh_area_title">
+                    <a href="javascript:" class="t">New 最近更新</a> <span class="r">
+                    {dede:channel type='son' typeid='1'}
+                    <a href='[field:typeurl/]'>[field:typename/]</a>
+                    {/dede:channel} </span>
+                </div>
+                <br>
+{dede:freelist/}
+            </div>
+                <div id="pagination"><div class="wp-pagenavi">
+                {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+                </div></div>
+        </div>
+        <div id="xh_sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom:10px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+{dede:arclist row=5 orderby=click titlelen='42'}
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" width="83" title="[field:fulltitle/]" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="[field:arcurl/]" target="_blank" title="[field:fulltitle/]">[field:title/]</a></div>
+</li>
+{/dede:arclist}
+</ul>
+                </div>
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+            <div class="widget links">
+                <h3>
+                    合作机构</h3>
+                <ul>{dede:flink linktype = '2' row='24'/}
+                <li><a href="http://www.lieqibaike.com/" target="_blank" title="猎奇百科">猎奇百科</a></li>
+                </ul>
+                <div class="clear">
+                </div>
+            </div>
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="boxBor" onclick="IBoxBor()" style="cursor:pointer;"></div>
+    <input type="hidden" id="hdBoxbor" />
+    <script type="text/javascript">
+
+        $("#next-page").hover(function () { $(this).attr("src", "/xunmoban/css/images/next02.png"); }, function () { $(this).attr("src", "/xunmoban/css/images/next01.png"); });
+        $("#last-page").hover(function () { $(this).attr("src", "/xunmoban/css/images/last02.png"); }, function () { $(this).attr("src", "/xunmoban/css/images/last01.png"); });
+
+        $(function () {
+            var imgHoverSetTimeOut = null;
+            $('.xh_265x265 img').hover(function () {
+                var oPosition = $(this).offset();
+                var oThis = $(this);
+                $(".boxBor").css({
+                    left: oPosition.left,
+                    top: oPosition.top,
+                    width: oThis.width(),
+                    height: oThis.height()
+                });
+                $(".boxBor").show();
+                var urlText = $(this).parent().attr("href");
+                $("#hdBoxbor").val(urlText);
+            }, function () {
+                imgHoverSetTimeOut = setTimeout(function () { $(".boxBor").hide(); }, 500);
+            });
+            $(".boxBor").hover(
+                function () {
+                    clearTimeout(imgHoverSetTimeOut);
+                }
+                , function () {
+                    $(".boxBor").hide();
+                }
+            );
+            });
+            function IBoxBor() {
+                window.open($("#hdBoxbor").val());
+            }
+            function goanewurl() {
+                window.open($("#hdUrlFocus").val());
+            }
+</script>
+
+    </div>
+{dede:include filename="footer_index.htm"/}
+</body>
+</html>

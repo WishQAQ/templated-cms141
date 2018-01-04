@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",236,264);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("global","",277,303);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",347,377);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",414,441);
+$z[3][4]['name']="cfg_keywords";
+$z[4]=Array("include","",1897,1938);
+$z[4][4]['filename']="head_index.htm";
+$z[5]=Array("arclist","\r\n\r\n<li style=\"display: list-item;\"><a href=\"[field:arcurl/]\" target=\"_blank\">\r\n                <img src=\"[field:flash/]\" alt=\"[field:fulltitle/]\"></a></li>\r\n       ",2184,2447);
+$z[5][4]['flag']="f";
+$z[5][4]['limit']="0,4";
+$z[5][4]['titlelen']="40";
+$z[5][4]['addfields']="flash";
+$z[5][4]['channelid']="1";
+$z[6]=Array("arclist","\r\n            <a href=\"[field:arcurl/]\" target=\"_blank\">\r\n    <img src=\"[field:flash/]\" alt=\"[field:title/]\" width=\"255px\" height=\"420px\"></a>\r\n    ",3156,3414);
+$z[6][4]['flag']="a";
+$z[6][4]['row']="1";
+$z[6][4]['orderby']="pubdate";
+$z[6][4]['titlelen']="28";
+$z[6][4]['addfields']="flash";
+$z[6][4]['channelid']="1";
+$z[7]=Array("channel","\r\n                    <a href='[field:typeurl/]'>[field:typename/]</a>\r\n                    ",4102,4245);
+$z[7][4]['type']="son";
+$z[7][4]['typeid']="1";
+$z[8]=Array("arclist","\r\n                  \r\n                        <div class=\"xh_post_h_3 ofh\">\r\n                            <div class=\"xh_265x265\">\r\n                                <a target=\"_blank\" href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">\r\n                                    <img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\" height=\"240\" width=\"400\"></a></div>\r\n                            <div class=\"r ofh\">\r\n                                <h2 class=\"xh_post_h_3_title ofh\">\r\n                                    <a target=\"_blank\" href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">[field:fulltitle/]</a>\r\n                                </h2>\r\n                                <span class=\"time\">[field:pubdate function=\"MyDate('Y年m月d日 H:i',@me)\"/]</span>\r\n                                <div class=\"xh_post_h_3_entry ofh\">[field:description/]</div>\r\n                                <div class=\"b\">\r\n                                     <span title=\"[field:goodpost/]人赞\" class=\"xh_love\"><span class=\"textcontainer\"><span>[field:goodpost/]</span></span> <span class=\"bartext\"></span></span> <span title=\"[field:click/]人浏览\" class=\"xh_views\">[field:click/]</span>\r\n                                </div>\r\n                            </div>\r\n                            <span class=\"cat\"><a href=\"[field:typeurl/]\" title=\"查看 [field:typename/] 中的全部文章\"\r\n                                rel=\"category tag\">[field:typename/]</a></span>\r\n                        </div>\r\n  ",4341,5879);
+$z[8][4]['row']="10";
+$z[8][4]['titlelen']="32";
+$z[8][4]['noflag']="a";
+$z[9]=Array("type","[field:typeurl /]",5978,6029);
+$z[9][4]['typeid']="1";
+$z[10]=Array("arclist","\r\n\r\n<li style=\"border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;\">\r\n<div style=\"float:left;width:85px;height:55px; overflow:hidden;\"><a href=\"[field:arcurl/]\" target=\"_blank\"><img src=\"[field:litpic/]\" width=\"83\" title=\"[field:fulltitle/]\" /></a></div>\r\n<div style=\"float:right;width:145px;height:52px; overflow:hidden;\"><a href=\"[field:arcurl/]\" target=\"_blank\" title=\"[field:fulltitle/]\">[field:title/]</a></div>\r\n</li>\r\n",6378,6877);
+$z[10][4]['row']="5";
+$z[10][4]['orderby']="click";
+$z[10][4]['titlelen']="42";
+$z[11]=Array("flink","",7271,7308);
+$z[11][4]['linktype']="2";
+$z[11][4]['row']="24";
+$z[12]=Array("include","",9332,9375);
+$z[12][4]['filename']="footer_index.htm";
+
+?>

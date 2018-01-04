@@ -1,0 +1,3 @@
+INSERT INTO `dede_flink` VALUES('12','1','http://www.xunmoban.com/moban/dedecms','ÍøÕ¾Ä£°å','','','','1415264028','1','2');
+INSERT INTO `dede_flink` VALUES('10','1','http://www.xunmoban.com','Ñ°Ä£°å','','','','1415264007','1','2');
+INSERT INTO `dede_flink` VALUES('11','1','http://www.xunmoban.com/moban/','ÍøÕ¾Ä£°å','','','','1415264015','1','2');

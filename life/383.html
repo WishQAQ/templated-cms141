@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>张向东：一个人的骑行_宽屏大气博客文章类织梦模板-zhanoo.com</title>
+<meta name="keywords" content="张向东,向东,一个,人的,骑行,张向东,向东,3年内,骑遍," />
+<meta name="description" content=" 从2007年开始，他开始迷上单车骑行。他的骑行野心是五大洲的那些最美的线路。如今，这个清单中已经填入了三个地点：法国蓝色海岸、青海湖环湖线和澳洲大洋路。 " />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+<script src="/xunmoban/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/article.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script>
+ 
+</head>
+<body class="single2">
+   <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="宽屏大气博客文章类织梦模板-zhanoo.com">宽屏大气博客文章类织梦模板-zhanoo.com</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+<li><a href="/lookbike/">单车分类</a>
+<ul>
+
+<li><a href="/lookbike/fixed-gear/">死飞车</a></li>
+
+<li><a href="/lookbike/vintagebicycle/">复古骑行</a></li>
+
+<li><a href="/lookbike/roadbicycle/">公路车</a></li>
+
+<li><a href="/lookbike/mountainbike/">山地车</a></li>
+
+<li><a href="/lookbike/small/">折叠/小径车</a></li>
+
+<li><a href="/lookbike/bmx/">BMX</a></li>
+
+<li><a href="/lookbike/otherbike/">城市车及其他</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/gear/">骑行装备</a>
+<ul>
+
+<li><a href="/gear/accessories/">车身装备</a></li>
+
+<li><a href="/gear/rs/">人身装备</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/life/">单车生活</a>
+
+
+
+
+
+ </li2><li><a href="/news/">行业资讯</a>
+
+
+
+
+
+ </li2>
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+    <div id="wrapper">
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;">
+                    <div class="path"><a href='/'>主页</a> > <a href='/life/'>单车生活</a> > </div>
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>张向东：一个人的骑行</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：2014-02-06 12:28编辑：xunmoban.com</p>
+                            </div>
+                            <div class="div-content">
+                               
+                                <p>
+                                    <p style="text-align: center;"><img src="http://www.700bike.com/wp-content/uploads/2012/11/108ypq.jpg" alt="690" /></p>
+<p style="text-align: center;">张向东说，3年内，骑遍全世界最好的骑行路线。</p>
+从2007年开始，他开始迷上单车骑行。他的骑行野心是五大洲的那些最美的线路。如今，这个清单中已经填入了三个地点：法国蓝色海岸、青海湖环湖线和澳洲大洋路。</p><p>
+之后，他回到自己的老本行，和朋友共同创立了3G门户。如今的他认为，这个从几个人成长起来的公司，正在改变这个世界。张向东做过两年记者，他说之前的自己投身互联网失败，因为改变不了世界，所以想去看看别人如何改变世界。</p><p>
+2007年，去法国骑车的决定有些仓促。第一次骑行，张向东给自己装备了几十斤的骑行包。这个跨在山地车上的骑行包，包括了种类齐全各种门型的大型修车工具，衣服、照明设备、备用电池，这套沉重的装备花去了他三四千元。</p><p>
+可是在法国，所有骑行者都最怕的几大麻烦：掉链、坏天气、迷路，依然同时找上门来。这天，从上午到凌晨，在阴雨天里和已经迷失的方向中，张向东连续骑车超过14个小时。穿着浑身发光的骑行服，在天黑之后，想拦下一辆偶尔经过的卡车，也成为一件不可能的事。一群酒鬼对着路上的张向东狂喊，冲他扔着酒瓶，他也下意识地酒鬼们狂喊，为自己壮胆。</p><p>
+在这段让人害怕的荒野，张向东遇到了旅途中最让人宽慰的事。他路遇了一位在雨中狩猎的法国男人，闲聊中，男人说道，晴天是好天气，下雨就不是好天气么?这句话让张向东顿时从所有的噩运中醒悟过来，开始开心地完成接下来的路程。</p><p>
+张向东会捡些石头回家，那些他带回的石头，即便没有什么特别，也都是因为“被遇见”。遇见的还有很多路上的朋友。在青海湖的行程开始前，快要出发时，张向东遇见了一个小孩，小孩对他说“叔叔你的车真漂亮”，广场上的几十个孩子顿时将他围了一圈。孩子们一个个试骑他的公路车，直到天黑。</p><p>
+骑法国，张向东用的是山地车：骑青海湖，他在青海当地的租车店相中了店里的唯一一辆公路车。这辆属于店主的公路车是店内唯一不被出租的单车，店主余希海是每年当地环青海湖自行车赛的冠军。因为相谈投缘，余希海借出这辆心爱的单车，张向东用这辆冠军车完成了自己的环湖行程。</p><p>
+这次，在青海，他的骑行装备迅速缩减，只剩下了包里的一套干净衣服、水壶、洗漱用具、用于更换轮胎和车链的袖珍修车工具、螺丝刀。</p><p>
+今年的骑行，张向东依然选择了风景很好的地方。骑在澳洲大洋路上的时候，他给未来的自己写明信片，告诉自己“你就是自由”。自由，是这一路的关键词。当张向东以50公里／小时的速度将印度洋的海水迅速抛在身后时，他说体会到的是一种摆脱生活的重力所带来的自由。
+<p style="text-align: center;"><img src="http://www.700bike.com/wp-content/uploads/2012/11/YFGW3.jpg" alt="3" /></p>
+<p style="text-align: center;">自行车骑得是Bianchi 1885</p>
+<strong>张向东自述</strong></p><p>
+<strong>“我要在最好的地方看到最好的风景，去到一个无人的状态，和自己说说话。”“晴天是好天气，下雨就不是好天气么”</strong></p><p>
+我这个人有点形式主义。前年的一个周末，在小区里，我有点懵，工作压力积累到一定阶段，忽然想去骑车。我打电话给我一个朋友，让他帮我找辆好点的车，我要去国外骑。我不想在国内骑，国内的很多公路不适合骑车，也有很多干扰。</p><p>
+第一次是法国的蓝色海岸线。从早到晚，不停的上坡下坡，很单调，脑子会容易陷入冥想状态。人经常会疑惑，自我和外在世界的活动。其实自由就是一个探寻的过程。</p><p>
+在法国有一天，车坏、上坡、下雨、迷路，我全都遇到了。我看到一个人在雨中狩猎，叼着雪茄，拿着猎枪，看上去很酷。我问他，先生，下着雨，你为什么还在这里。他告诉我，晴天是好天气，下雨就不是好天气么。</p><p>
+我当时就特别开心了。又累又饿骑了10小时，好不容易碰见一个人，听到他这么说我突然很放松，开始一个人慢悠悠地在雨中骑车，等到身上的热量把衣服烤干。</p><p>
+这些，就像你生活里会遇到甜蜜的爱情、顺利的工作和考上名牌大学，也会遇到失恋。是完全一样的。我遇见什么，看见什么，是不能完整地告诉你的，有走过才知道，就和你的生活一样。</p><p>
+实际上我这些年做这些事，生活里遇见的事情，我一直觉得，交流是不可能的。当你说出来的时候，就错了。我倒不是说悲观。我当年很喜欢的摄影师，美国女摄影师戴安娜·阿巴斯，她拍摄残疾人，我遇见她的作品都会收藏，她也让我意识到这点。</p><p>
+<strong> “一言不合焚琴煮鹤，两情相悦脱掉衣裳”</strong></p><p>
+这次在大洋路，我骑了300多公里，一天80多公里。有时候我把骑行服穿在衣服里面，手套肯定要装备，但我不戴眼镜，因为我喜欢看海的颜色。</p><p>
+我每次骑行都是一个人。骑行让我感觉非常好，我这个人的骑车不像背包客那样，我相信没什么大不了的，我要的东西是不是要把大洋路走完，我要在最好的地方看到最好的风景，去到一个无人的状态，和自我交流。</p><p>
+有时骑在路边，树林里的阳光透过来，我会想，当年修路的老兵，也是这样的海面，印度洋的海面，太阳照着他们，他们叨着烟，刚经历过生死，在这里修路，有些人也许还很郁闷，有些人战功显赫，这些都是人生。过去100年和1000年的人生没有什么不同，我走在他们的路上。</p><p>
+我喜欢那种冥想状态，有时候想着会觉得很欢喜，天然的欢喜。</p><p>
+欢喜这个词很好，有时候我觉得生活真的是挺美好的；有时候也会很悲伤，觉得人生不过是这样。</p><p>
+我在青海湖骑行时给朋友发了短信说，骑行的时候张开双臂，下坡就像一次短暂的飞行。生活其实很琐碎，我们得吃饭、得点东西喝，但是骑行让我感受到，我摆脱了生活的重力。自由的感觉就是这样，摆脱生活的重力。</p><p>
+自由不是一种形式，是一种态度。自由不是无拘无束，你要是真的有自由，你感觉不到寂寞，你不会怕寂寞。我没有达到这个境界。骑车的路上，我能够达到几秒的状态，知道它在那儿。我也不认为这个世界上很多人需要得到自由。很多人很早就没有力量，大脑中关于自由的东西已经洗掉了。</p><p>
+在路上，我从微博上征集每个人关于自由的看法。李蕾的说法还挺有意思的， “一言不合焚琴煮鹤，两情相悦脱掉衣裳。”极少见女孩子这样洒脱。还有一个人讲了一句话，挺符合我自己的状态，他说，自由，从字面来分解，“自”是眼睛上搭出一只手，四下观望， “由”是一亩三分地上露出一个头。就是说你不要永远在自己的当下，自由应该是离开自我、本我，是在远方。</p><p>
+<strong>“自行车是一种机械，它不消耗别的能量，只消耗你自己的能量。”</strong></p><p>
+我跟朋友讲，轻易不要喜欢自行车，太容易让入迷路，自行车是一种机械，它不消耗别的能量，只消耗你自己的能量。它跟你在一起，合为一个整体。</p><p>
+我在大洋路的最后一天，到达吉朗。那几乎就是一个自行车城，我抵达那天刚好是澳洲一个自行车赛的最后一天，男女老少都骑着自行车，所有人都戴着头盔和骑行服，草坪上直播着自行车赛，街道上突然有人说停，然后自行车“刷”地经过，那个速度让你觉得自卑得很。整个城市的人都在骑着1自行车，我很开心，就像到达了一个自行车城。</p><p>
+我在法国小镇遇到的人，他的车库里贴着一张骑行地图，他把自己骑过的地点标出，会说这是我年轻时骑过的，你一定要去。但是澳洲人是天天都在骑，把骑车生活化了。</p><p>
+在吉朗，我很好奇的是一组船桩雕塑。我也不知道它为什么这样。一位女士，她把吉朗和澳洲的历史用这个方式做了记录，她选择雕塑这个形式，也许不是为了好玩。总共104个或者110个雕塑，被放在海滩上，我拍了七八十个。有些脚上雕了小猫，很多细节。前年她死了，死后她把这些送给政府，管理权交给自己的三个儿子，没做任何商业开发。我在这儿拍了整整一天，后来躺在海边睡着了。我想，骑车也好，做这个公司也好，写文章也好，做一本杂志也好，最重要的是你怎么想，你感受到什么。这些事是不能交流的，只有我自己知道。</p><p>
+<strong>关于自由的一切冥想</strong></p><p>
+我这次在回来的飞机上遇见贾樟柯。我很喜欢他的《贾想》封面上的那句话： “拍电影是我最接近自由的方式。”其实永远没有自由可以达到，无论你做什么都是在靠近它。</p><p>
+没有人知道自由。谁不想要自由？但是每个人想要的自由不一样，不像钱，谁都想要。</p><p>
+自由是内心的完满的充实的状态，而不是像有些人做公司那样希望改变世界。你照样可以用一辆永久的28自行车去骑行。有个男孩22岁一毕业就开始骑行，一年有四五个月在国外骑车，走到哪算哪。我知道之后就让我的秘书联系他，我们两个在街上不用打招呼，也能够相互认出对方，那天，我们在路边喝了两瓶啤酒聊天。</p><p>
+在大洋路，前三天不停地下雨，数不清下了多少雨，但我觉得都很好，我能接受生活中的不确定。重要的是我知道我希望得到什么，我希望得到的状态，在大洋路上得到了。</p><p>
+生活也是这样，这个公司从两个人变成1000人的公司，这也是我们表达的方式。按照我们的方式把这个公司做成充满想像力的公司，虽然结果无法预料，但是每一年我们都在创造，而不是模仿，不是做那些乏味重复的事情，那就好。</p><p>
+所以，无论做什么事都是机缘，从来没有一个额外的事是你的前提，前提还是你自己。做这个公司也是我的机缘。它更适合我，就像电影更适合贾樟柯。你也可以坐在那儿像康德一样冥想，或者永远不出这个村子。</p><p>
+我的秘书说，你一个人去，好孤单啊。</p><p>
+当然啊。或者说我喜欢孤单。澳洲是非常寂寞的地方，我能待得住。骑车爬山都是很枯燥的事，不是所有人都忍受得了，人都挺怕寂寞的。</p><p>
+有次为了去看灯塔，我离开大洋路12公里。当离开一段路，想要骑回来，你知道回来的路是什么样，就很无聊又没有新期望，就变得特别难骑。所以千万别骑回头路，心理压力特别大。</p><p>
+有两天，在朋友家和一位非洲教授一起，我们什么都聊。我认为他把幸福和自由混淆在了一起，他认为他很自由，他年纪大了，自信地认为自己的生活就是自己想要的，他从另一块大陆来到这个地方，离婚，有两个孩子，但他那么寂寞，能够陪我两天让他那么开心。</p><p>
+<img class="aligncenter" src="http://www.700bike.com/wp-content/uploads/2012/11/XsRG3.jpg" alt="2" /></p><p>
+在骑行中，我是快乐的。快乐是最容易得到的。幸福存在于世俗生活中的细节里，而旅行不是生活状态，所以我不能说那时的我是幸福的。而自由则是一个终极状态。我起码是在往那个方向上去的。你忽然觉得满心欢喜，觉得脱离了生活的重力。这个世界人的生活多么的不确定，每个人都有那个答案，都要用一辈子去实现那个答案。什么是自由？他们对骑行的张向东说……9月30日18:52，张向东在个人微博发出征集 “什么是自由？骑行的路上可以找到吗7谢谢那么多朋友的关注。如果你转发并说明自己对自由的理解，我将挑选其中10条对我启发最大的阐述，从澳洲大洋路的尽头，为你寄出明信片。”截至10月19日，他收到209条回复。最终获得张向东明信片的是以下10位—一</p><p>
+l.JackaL金水哥：挣脱心灵上的枷锁，在规则之内不受约束，享受这无拘束的幸福。</p><p>
+2珍惜一爱：我认为自由是内心的超越与豁达，是对前路征服未知的自信，是自我的实现和认可，是在茫茫人海中敢于逆行的勇气。</p><p>
+3大囧岁：自由的一种，是那个后半生都在漂泊中度过的行脚僧山头火。是那个写下“欲求何而往风中去”、“笔直之路多寮寂”、“不断地穿越，不断地穿越，依旧是青山。”的山头火，是那个临死前写下“风起云涌，云涌云涌，步上白云”的可怜俳人。</p><p>
+4王小疯阿树：自由是不为外界固有物质及精神所困，去往来知世界寻找自己以及相关一切的行动。自由似乎总是无人做伴独自上路，因为太多喧嚣会让人困惑迷失。</p><p>
+5李蕾 自由就是哀而又伤，好色即淫，一言不合焚琴煮鹤，两情相悦脱掉衣裳，不触法网尽可不吃河蟹。</p><p>
+6吴悠morefree：自由——由心而发。有的人即便在监狱，铁栏也无法禁锢他思想的触须伸向天际。能困住的自由，充其量是放松。而我曾经把自己最心爱的动物——狼，因自私的爱，把它困在笼子里一生。幼稚地以为他可以衣食无忧，却忽略了它眼神中进出的寂寞，对自由的渴望。有时候这种对自由的向往甚至超越生命！</p><p>
+7.Re爸：自由就像胡德夫的这首歌，当开口说出的那句“逃吧！”起，就开始具备了飞翔的梦想，就像突然知道所有事，已经有了它该有的开始。不见得好，不见得坏，只是当这种声音轻轻地敲起时，微微笑说“走吧！”那时，你我都知道该起程了。就像打开一瓶摆了近40年的红酒，闻到的是那充满生命力的葡萄果香，还有那持续发酵的酒香，如果喝得太早会太腻，喝得再晚一点可能会更酸，而现在想是最恰当的时机了。自由就是享受当下。</p><p>
+8夏楠：自由是美。自由是回到内心的自在。</p><p>
+9章小初：自由，自：目出头，眼光放远处；由：田出头，不止为一亩三分地。两字在一起，就是眼光不为当下所系，心不为生存所系；放眼未知，放眼身外，心随境游，境由心生。</p><p>
+10黄沛：真正的自由是心的自由，心里有条路，和风细雨也罢，风和日丽也好，都享受着走下去，外面的喜怒纷扰一笑而过吧。我正在追求它的路上。</p><p>
+（文字来源：《城市画报》268期）</p>
+                                
+                                <center id="pagenav">
+                                    </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+                                        
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren">
+                                                        </a><a class="jiathis_button_kaixin001"></a><a href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                        charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="float: right; width: 60px; font-size: 12px;">
+                                        分享至：</div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+                                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;">
+                                    &nbsp;&nbsp;猜您喜欢的文章
+                                </div>
+                                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/life/373.html" target="_blank"><img src="/uploads/allimg/140206/337.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">复古钢架自行车与穿越托斯卡纳丘陵的L’Eroic</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/life/416.html" target="_blank"><img src="/uploads/140206/1-1402061T015922.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">COACH再度携手王力宏 踩单车演绎2013秋冬男士</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/life/380.html" target="_blank"><img src="/uploads/allimg/140206/338.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">现场直击：骑行会友释放压力 30位媒体大佬纵</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/life/361.html" target="_blank"><img src="/uploads/allimg/140206/321.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">骑行40000公里 英国胶片摄影师的骑游之旅</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/life/370.html" target="_blank"><img src="/uploads/allimg/140206/334.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[微视频] 骑摆记：远离喧嚣的都市 湖南车友深</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/life/389.html" target="_blank"><img src="/uploads/allimg/140206/347.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">执着的小辫与西藏的骑车旅行</span></a></li>
+           
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+          <!-- Comment BEGIN -->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+
+          <!--  Comment END --> 
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+                
+                </div>
+                <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg">
+                    <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+                        <span class="textcontainer"><span class="votecount26536">0</span></span> <span class="bartext voteid26536"><a href="#"
+                                id="aZanImg" onclick="javascript:postDigg('good',383)"></a></span><span class="text" id="spanZan">赞</span>
+                        <span class="text love">人</span>
+                    </div>
+
+
+                </div>
+  <script language="javascript" type="text/javascript">getDigg(383);</script>
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/life/368.html" target="_blank"><img src="/uploads/allimg/140206/327.jpg" width="83" title="骑摆记：比利时车手Joris的尼泊尔野马河谷山地车之旅" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/life/368.html" target="_blank" title="骑摆记：比利时车手Joris的尼泊尔野马河谷山地车之旅">骑摆记：比利时车手Joris的尼泊尔野马河谷山</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/life/378.html" target="_blank"><img src="/uploads/allimg/140206/335.jpg" width="83" title="深圳设计师浩子和77的11天成都-稻城自虐骑行" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/life/378.html" target="_blank" title="深圳设计师浩子和77的11天成都-稻城自虐骑行">深圳设计师浩子和77的11天成都-稻城自虐骑行</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/life/389.html" target="_blank"><img src="/uploads/allimg/140206/347.jpg" width="83" title="执着的小辫与西藏的骑车旅行" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/life/389.html" target="_blank" title="执着的小辫与西藏的骑车旅行">执着的小辫与西藏的骑车旅行</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/life/388.html" target="_blank"><img src="/uploads/allimg/140206/351.jpg" width="83" title="玄白朱单骑英国第二季 芒特索洛尔骑行" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/life/388.html" target="_blank" title="玄白朱单骑英国第二季 芒特索洛尔骑行">玄白朱单骑英国第二季 芒特索洛尔骑行</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/life/382.html" target="_blank"><img src="/uploads/allimg/140206/345.jpg" width="83" title="子弹传球：北京-香港4000多公里单车寻爱之旅" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/life/382.html" target="_blank" title="子弹传球：北京-香港4000多公里单车寻爱之旅">子弹传球：北京-香港4000多公里单车寻爱之旅</a></div>
+</li>
+
+
+
+</ul>
+                </div>
+            
+                <div class="widget" style="margin-bottom: 0px;margin-top:5px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+               
+                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_single.js"></script>
+  
+    <script type='text/javascript' src='/blog4/xunmoban/js/jquery.colorbox-min.js?ver=1.3.17.2'></script>
+
+
+    </div>
+
+    
+  <div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/aboutus.html">关于我们</a></li>
+                <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157">
+                    <a href="/contact.html">联络我们</a></li>
+                <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158">
+                    <a href="/tougao.html">我要投稿</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &copy; 2002-2014 xunmoban.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/">
+                粤ICP备88888888号</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+
+ 
+</body>
+</html>

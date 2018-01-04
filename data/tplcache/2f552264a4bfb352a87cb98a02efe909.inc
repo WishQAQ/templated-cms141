@@ -1,0 +1,2 @@
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="[field:arcurl/]" target="_blank"><img src="[field:litpic/]" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[field:title/]</span></a></li>

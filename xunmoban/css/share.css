@@ -1,0 +1,12 @@
+.bdshare-button-style0-24 a{width: 24px;height: 24px;display: inline-block;margin-right: 5px;background: url(../img/share.png);cursor: pointer;margin-bottom: -8px;opacity: .8;position: relative;top: -2px;}
+.bdshare-button-style0-24 a:hover{opacity: 1}
+.bdshare-button-style0-24 a.bds_tsina{background-position: 0 0;}
+.bdshare-button-style0-24 a.bds_weixin{background-position: 0 -32px;}
+.bdshare-button-style0-24 a.bds_qzone{background-position: 0 -65px;}
+.bdshare-button-style0-24 a.bds_sqq{background-position: 0 -98px;}
+.bdshare-button-style0-24 a.bds_renren{background-position: 0 -131px;}
+.bdshare-button-style0-24 a.bds_tqq{background-position: 0 -163px;}
+.bdshare-button-style0-24 a.bds_douban{background-position: 0 -196px;}
+.bdshare-button-style0-24 a.bds_fbook{background-position: 0 -226px;}
+
+.bds_count{border-left: solid 1px #DDD;padding: 0 12px 0 12px;margin-left: 5px;}

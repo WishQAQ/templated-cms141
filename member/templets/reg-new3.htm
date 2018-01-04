@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="?php echo $cfg_webname; ?>">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="refresh" content="10;url=article_add.php">
+<title><?php echo $cfg_webname; ?>- 注册成功</title>
+<link rel='stylesheet' id='_common-css'  href='/xunmoban/css/common2014.css' type='text/css' media='all' />
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/xunmoban/img/icon-144x144.png">
+<!--[if lt IE 9]><script src="/xunmoban/js/html5.js"></script><![endif]-->
+<script type="text/javascript">
+var time = 10;
+function returnUrlByTime() {
+   window.setTimeout('returnUrlByTime()', 1000);
+   time = time - 1;
+   document.getElementById("loadtime").innerHTML = time;
+}
+</script>
+</head>
+<body class="page page-id-1885 page-template page-template-pagesuser-php">
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+
+<header class="header">
+<div class="container">
+	<h1 class="logo"><a href="/" title="DEMO121演示站">DEMO121演示站</a></h1>	<ul class="nav">
+		<li class="navto-home"><a href="/"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+		<li class="navto-funny"><a href="/lookbike"><span class="glyphicon glyphicon-bullhorn"></span>单车分类</a></li>
+		<li class="navto-tech"><a href="/gear"><span class="glyphicon glyphicon-phone"></span>骑行装备</a></li>
+		<li class="navto-view"><a href="/life"><span class="glyphicon glyphicon-map-marker"></span>单车生活</a></li>
+		<li class="navto-food"><a href="/news"><span class="glyphicon glyphicon-cutlery"></span>行业资讯</a></li>
+		<li class="navto-life"><a href="http://xunmoban.com/"><span class="glyphicon glyphicon-thumbs-up"></span>织梦模板</a></li>
+
+
+	</ul>
+
+		<div class="slinks">
+		<a href="http://xunmoban.com/category-953349438.htm?spm=a1z10.5.w5002-7271511032.9.CVdbRA&search=y&catName=%C6%F3%D2%B5%D4%B4%C2%EB">企业源码</a> - <a href="http://xunmoban.com/category-977748136.htm?spm=a1z10.1.w5002-7271511032.5.w8sDee&search=y&catName=%BE%AB%C6%B7%B2%A9%BF%CD">精品博客</a> - <a href="/aboutus.html">关于我们 </a> - <a href="/contact.html">联系我们</a> - <a href="/tougao.html">我要投稿</a><br>
+		<a class="feed-weixin" rel="external nofollow" href="javascript:;">关注微信</a> - <a rel="external nofollow" href="#" title="alibaixiucom" target="_blank">新浪微博</a> - <a rel="external nofollow" href="#" title="alibaixiu" target="_blank">腾讯微博</a>
+
+	</div>
+</div>
+</header>
+
+<div class="container container-user loginshow">		
+		<p class="success" style="font-size:18px;width:500px;margin:50px auto;line-height:30px">注册成功!<?php echo $uname=empty($uname)? '' : '您的用户名：<font color="#ff6600">'.$uname.'</font>,';?>您已成为本站的正式会员!<br /><?php if($cfg_mb_spacesta=="-10") echo '<font color="#ff6600">由于系统开启了邮件审核机制，因此你的帐号需要审核后才能发信息!</font><br />';?>
+  <font color="#ff6600"><span id="loadtime" style=" font-weight:bold">10</span></font>秒钟后自动转到会员中心！<br />
+<a href="<?php echo $cfg_cmspath; ?>/member/article_add.php">马上进入会员中心</a>&nbsp;&nbsp;<a href="<?php echo $cfg_cmspath; ?>/">返回网站首页</a></p>	</div>
+
+
+<script src='/plus/mytag_js.php?aid=2' language='javascript'></script>
+</body>
+</html>

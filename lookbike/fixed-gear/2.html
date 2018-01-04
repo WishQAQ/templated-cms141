@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way_宽屏大气博客文章类织梦模板-zhanoo.com</title>
+<meta name="keywords" content="Factory,View,探访,自行车,工厂,大阪,涂装,M" />
+<meta name="description" content=" 我们这一期Factory View要介绍的The Milk Way Factory银河工坊，是一家大阪的涂装工厂。他以一种低调而独立的姿态，为众多柯林车架以及Cherubim的顶级车架提供着涂装... " />
+<link rel="stylesheet" type="text/css" media="all" href="/xunmoban/css/style.css" />
+<script src="/xunmoban/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.error.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jtemplates.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/jquery.form.js" type="text/javascript"></script>
+    <script src="/xunmoban/js/lazy.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/xunmoban/js/wp-sns-share.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/voterajax.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/userregister.js"></script>
+    <link rel="stylesheet" href="/xunmoban/css/pagenavi-css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/xunmoban/css/votestyles.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/voteitup.css" type="text/css" />
+    <link rel="stylesheet" href="/xunmoban/css/article.css" type="text/css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script>
+ 
+</head>
+<body class="single2">
+   <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div> 
+<div id="header_wrap">
+    <div id="header">
+        <div style="float: left; width: 310px;">
+            <h1>
+                <a href="/" title="宽屏大气博客文章类织梦模板-zhanoo.com">宽屏大气博客文章类织梦模板-zhanoo.com</a>
+                <div class="" id="logo-sub-class">
+                </div>
+            </h1>
+        </div>
+        <div id="navi">
+
+<ul id="jsddm">
+<li><a class="navi_home" href="/">首页</a></li>
+<li><a href="/lookbike/">单车分类</a>
+<ul>
+
+<li><a href="/lookbike/fixed-gear/">死飞车</a></li>
+
+<li><a href="/lookbike/vintagebicycle/">复古骑行</a></li>
+
+<li><a href="/lookbike/roadbicycle/">公路车</a></li>
+
+<li><a href="/lookbike/mountainbike/">山地车</a></li>
+
+<li><a href="/lookbike/small/">折叠/小径车</a></li>
+
+<li><a href="/lookbike/bmx/">BMX</a></li>
+
+<li><a href="/lookbike/otherbike/">城市车及其他</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/gear/">骑行装备</a>
+<ul>
+
+<li><a href="/gear/accessories/">车身装备</a></li>
+
+<li><a href="/gear/rs/">人身装备</a></li>
+
+
+</ul>
+
+ </li2><li><a href="/life/">单车生活</a>
+
+
+
+
+
+ </li2><li><a href="/news/">行业资讯</a>
+
+
+
+
+
+ </li2>
+
+</ul>
+
+            <div style="clear: both;">
+            </div>
+
+            
+        </div>
+        <div style="float: right; width: 209px;">
+            <div class="widget" style="height: 30px; padding-top: 20px;">
+                <div style="float: left;">
+      <form  name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" />                
+<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+		</form>
+                        </div>
+                <div style="float: left;">
+                    <img src="/xunmoban/css/img/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()"  /></div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+    <div id="wrapper">
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;">
+                    <div class="path"><a href='/'>主页</a> > <a href='/lookbike/'>单车分类</a> > <a href='/lookbike/fixed-gear/'>死飞车</a> > </div>
+                    <div class="single_entry single2_entry">
+                        <div class="entry fewcomment">
+                            <div class="title_container">
+                                <h2 class="title single_title">
+                                    <span>[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way</span><span class="title_date"></span></h2>
+                                <p class="single_info">时间：2014-02-05 21:29编辑：xunmoban.com</p>
+                            </div>
+                            <div class="div-content">
+                               
+                                <p>
+                                    <p><strong>(文：陈帅 转载请注明来自700BIKE.COM)</strong></p><p>之前有朋友说Factory View写得过于流水，希望能够了解更多工厂背后的故事，所以，在这一期的Factory View之前，我们先来聊一些别的，把Viewing的视角拉远一些，拉出工厂的内容范围去感受那些属于他们自己独特的风格与气质。让我先从这一期的题目说起···</p><p><strong>工匠精神</strong></p>本期的题目灵感来自于罗振宇在Geek Park上的演讲“找到匠人精神”，他认为，真正的匠人是在用手艺做事，极其专注与认真，强调细节的雕琢，追求工艺的完美。在生产中，个人价值的部分远超越于组织的作用。所以在工匠精神的背后，强调的是匠人们多年的训练以及被时间打磨出来的技艺。<br /><p>这样典型而朴素的古典主义定义得到了很多人的共鸣。人们羡慕这种精神，并希望自己能够像匠人们一样踏实且认真的做事，即使自己没有拥有一个明确的特长或者技艺，毕竟在这个浮躁的社会，能够认真且踏实的生活，实在是太难能可贵了。</p><p><strong>认真难得</strong></p>拿骑单车和开汽车来说，从A地到B地，速度又快又不费事的汽车，是大多数人的选择。骑单车？要检查车胎，拧紧曲柄，还换上舒适的衣服，带着头盔（如果你有的话），然后在脑袋里规划一下路线，接着一脚踏一脚踏地把自己送到目的地。这和坐车相比，是不是略显认真了一点？<br /> <br />不过，当你开车或者坐在汽车里，你是一个被动的观众，只能呆板地看着景物从车窗外飞驰而过。从实际观感的角度来说，这和你在家里看电视没有本质的区别。<br /> <br />骑自行车就完全不同了，它没有车窗玻璃在面前阻挡你的视野，你不再是景致的观众，而是身处于自然之中。自己踩着脚踏和单车一起向前，才能感受到那种身临其境的真实。<br /> <br />如果真的是你，你会做怎样的选择？是选择麻烦和困难，还是享受容易与轻松；是保持独立自省，还是跟大众一起随波逐流；是勇敢地坚持，还是纠结于拖延···Too many choices, too little difference。<br /> <br />我们听过了太多的故事，那些拿着精心准备的功课，避开拥挤的人群，在最真实的世界中畅快远行的人嘴里说出来的故事，远比上车睡觉，下车照相的东南亚，欧罗巴游客相机里的照片精彩。而那些将手里廉价的胶片单反用掉了漆的摄影师拍出的照片，也一定要比整天把大三元，红圈全幅挂在嘴边的那些拍照片的胖子来得更有深度。每天坚持锻炼的人，相对于只热衷于喝酒应酬的人来说，除了健康的体魄，更有一个良好的生活方式。<br /> <br />当身体倾向于舒适，懒惰，不愿意走出去寻找和体验那些独一无二的事物时，你就会开始排斥那些冒险却精彩的事情，从而只会选择简单，轻松，容易的东西去做。生活也随之而来变得平庸，缺少了不确定性，也就没有了原创感。<br /><p>哈佛校长德鲁·吉尔平·福斯特曾经说过：“在醒着的时间里，追求你认为最有意义的事，否则你一定会后悔。人生之路很长，总有时间去实施备选方案，千万不要一开始就退而求其次！”</p><p><strong>品味良质</strong></p>所以，那些努力生活的人是在一点点地学习和积累，他们认真踏实，从一些最简单的事开始，吃饭，睡觉，运动，读书。他们尝试自己以前并没有做过的新鲜的事，只要觉得喜欢就会一直继续下去，并从中获得趣味。他们散发出平静，自在，真诚的气质，人们喜欢同他们聊天，共事，欣赏他们的作品，没有原因。<br /> <br />这一群人就是我们眼中“匠人”，生活的匠人，将自己的理念，思想体现在喜欢的物件或是所做的事情上面，不管他们从事什么行业，方式和技艺不过是一个副产品而已。<br /> <br />当我们聊起他们生活得认真且踏实，当我们讲到他们思想得冷静与独立，当我们分享他们品行得独特和趣味，当我们谈及他们目光得自信以及炯聚···当我们议论着这些看不见，摸不着，形而上行，不好解释又确实存在，并且吸引你，叫你羡慕，期望拥有的这些东西的时候，其实，是在议论这些人和事物背后的品质。<br /> <br />这种品质就被称为“良质！” 他没有标准，没有规则，一切全靠自己的直觉和观感判断，只有当你依靠阅读，经历，用知识和感受，凭着练习和实践，在自己的脑海中孕育出属于自己的良质的时候，你才会感觉到他们。他是一个属性，界定了一个范围，覆盖了那些叫你眼前一亮的东西；他是一种标准，并不实际存在，每个人心里都应该拥有属于自己良质的样子；他是那些在一个物件或者事情上折射出的自己的理念与思想，是更加生活化的 “道”与“禅”。<br /> <br />“良质”就像一瓶美酒，需要时间去呼吸，你不能一打开来就喝。所以，这一群人的另外一个特点是慢，因为专注而忽略了时间。对于他们来说，目标是很肤浅的，成果不过是时间给予的奖赏而已。<br /> <br />我们都会找到属于我们自己的“良质”的，即使现在看起来，我们和这一群人相差太远，生活难免浮躁与焦虑。龙应台在《亲爱的安德烈》中说到过这想相似的问题，她打了一个很贴切的比喻，大意是说，操场上慢慢散步的老者像百米冲刺的运动员那样慌张么？其实世界还大的很，无论快慢，只要你的方向是对的，就应该为你的所做而感到自豪。在我们这样的年纪，没有哪个人是完美与容易的。我们一定有不如人的地方，但有些只是错觉，不必因为错觉而慌张和否定自己，盲目地羡慕和想成为别人。<br /> <br /><strong>银河工坊The Milk Way Factory</strong><br /> <br />我们这一期Factory View要介绍的The Milk Way Factory银河工坊，是一家大阪的涂装工厂。他以一种低调而独立的姿态，为众多柯林车架以及Cherubim的顶级车架提供着涂装服务。<br /> <br />实际上，那些精致美丽的顶级车架涂装并不都是由车架制作人亲手完成，而是交给专业的涂装师来进行制作。由于技艺的要求和制作难度，只有极少数的涂装师可以胜任这份工作，银河工坊就是为数不多中的一个。他们拥有极其细腻的双手和敏锐的洞察力，对于每一个车架的涂装，都会非常精心的完成。为了更好的观察涂料与车架的融合，他们甚至不使用面罩，而是选择在身后放置一台可以吸收喷雾的机器。这样同时也可以防止了涂料污染。<br /> <br />杉本博司曾经说，在日本人们普遍认为，细节之中有神灵栖居。银河工访虔诚的处理着车架的每一个细节，甚至比制作人还要精细，只为了给这些车架一个匹配的外表，并打上车架制作人的LOGO。在涂装完成之后，人们的赞叹和欣赏都会全部给予车架公司或者制作者，再与他们没有关系。<br /> <br />所以，是制作车架还是来做涂装，是用科技还是用心，并不是一种标准，而是一种选择。<br /> <br />对于仅仅是希望浅尝辄止，抱着仅仅有辆车骑就好的那部分车友来说，涂装可能是他们不会接触到的部分。在你没有做好准备买一个好车架的时候，好的涂装跟你基本上没有关系。但是当你已经度过了那个只看价格，不顾品质的阶段时，无论你怎么搭配自己的配件，都可以找到属于你自己的东西，即使是在梅花的前叉上，装着HED的三刀也无所谓。<br /> <br />让我们来欣赏以下，银河工访的照片，看他们是如何做到心无障碍，凝视生活，做自己想做的事。希望大家在未来可以找到自己心中良质，拥有属于自己的“匠人精神”。<br /> <br />至于“良质”究竟是什么？懂的人自然懂。</p>
+                                
+                                <center id="pagenav">
+                                    </center>
+                                <div id="BottomNavOver" style="height: 80px;">
+                                    <div style="float: left; font-size: 12px;">
+                                        
+                                    </div>
+                                    <div style="float: right; padding-right: 20px; width: 120px;" class="div">
+                                        <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                                            <tr>
+                                                <td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+
+                                                </td>
+                                                <td style="border-width: 0px; padding: 0px;">
+                                                    <!-- JiaThis Button BEGIN -->
+                                                    <div class="jiathis_style">
+                                                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_renren">
+                                                        </a><a class="jiathis_button_kaixin001"></a><a href="http://www.jiathis.com/share"
+                                                            class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                                                    </div>
+                                                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652"
+                                                        charset="utf-8"></script>
+                                                    <!-- JiaThis Button END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div style="float: right; width: 60px; font-size: 12px;">
+                                        分享至：</div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+                                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;">
+                                    &nbsp;&nbsp;猜您喜欢的文章
+                                </div>
+                                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/10.html" target="_blank"><img src="/uploads/allimg/140205/12.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">Heavy Pedal推出死飞车架Zephyr</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/20.html" target="_blank"><img src="/uploads/allimg/140205/18.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">#CES展上的新玩意#  视觉利器 GUNNAR Optiks</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/39.html" target="_blank"><img src="/uploads/allimg/140205/39.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[大视野] 固齿公开赛新增街区竞速赛 现场惊险</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/2.html" target="_blank"><img src="/uploads/allimg/140205/1.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">[Factory View] 探访自行车工厂 ⑤：大阪涂装</span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/36.html" target="_blank"><img src="/uploads/allimg/140205/36.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">Cycle Messenger World Championships 2013  </span></a></li>
+<li style="margin-left: -10px; margin-right: 16px; margin-top: 20px; height: 180px;"> <a href="/lookbike/fixed-gear/12.html" target="_blank"><img src="/uploads/allimg/140205/11.jpg" style="width: 250px; height: 150px; margin-bottom: 0px;" />
+<span style="margin: 0px; padding: 0px; margin-top: -5px;">街拍：北美第二大的野猫赛 纽约Monstertrack</span></a></li>
+           
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+                                <a name="comment"></a>
+          <!-- Comment BEGIN -->
+<!--兼容版，可保证页面完全兼容-->
+<div id="SOHUCS"></div>
+<script>
+  (function(){
+    var appid = 'cyrna3OIQ',
+    conf = 'prod_f12acd6648a127b270c750fbbf8ecb1a';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+  })()
+</script>
+
+          <!--  Comment END --> 
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+<!-- 登录注册框开始 -->
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+<div style="margin-bottom:10px">
+    <div id="_userlogin">
+			<div class="user-signin">
+			<a href="/member/login.php"><img src="/images/denglu.jpg" width="60" alt="会员登录" /></a>  <a href="/member/index_do.php?fmdo=user&dopost=regnew"><img src="/images/zhuce.jpg" width="75" alt="会员注册" /></a>  <a href="/member/article_add.php"><img src="/images/tougao.jpg" width="60" alt="会员投稿" /></a>
+		</div>
+     </div>
+	<script language="javascript" type="text/javascript">CheckLogin();</script>
+</div>
+<!-- 登录注册框结束 -->
+                <div class="widget" style="margin-bottom: 0px;margin-top:20px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+                
+                </div>
+                <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg">
+                    <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+                        <span class="textcontainer"><span class="votecount26536">0</span></span> <span class="bartext voteid26536"><a href="#"
+                                id="aZanImg" onclick="javascript:postDigg('good',2)"></a></span><span class="text" id="spanZan">赞</span>
+                        <span class="text love">人</span>
+                    </div>
+
+
+                </div>
+  <script language="javascript" type="text/javascript">getDigg(2);</script>
+<!-- 右侧 -->
+
+         <div class="widget">
+
+<div style="background: url('/xunmoban/css/img/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+</div>
+<ul id="ulHot">
+
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/40.html" target="_blank"><img src="/uploads/allimg/140205/40.jpg" width="83" title="[大视野] 固齿公开赛现场 全国fixed gear车友单车及装备展示" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/40.html" target="_blank" title="[大视野] 固齿公开赛现场 全国fixed gear车友单车及装备展示">[大视野] 固齿公开赛现场 全国fixed gear车友</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/1.html" target="_blank"><img src="/uploads/allimg/140205/3.jpg" width="83" title="两家柏林品牌Ucon x 8bar携手合作推出的死飞车 ‘federleicht’" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/1.html" target="_blank" title="两家柏林品牌Ucon x 8bar携手合作推出的死飞车 ‘federleicht’">两家柏林品牌Ucon x 8bar携手合作推出的死飞</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/2.html" target="_blank"><img src="/uploads/allimg/140205/1.jpg" width="83" title="[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/2.html" target="_blank" title="[Factory View] 探访自行车工厂 ⑤：大阪涂装工厂Milky Way">[Factory View] 探访自行车工厂 ⑤：大阪涂装</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/3.html" target="_blank"><img src="/uploads/allimg/140205/2.jpg" width="83" title="[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/3.html" target="_blank" title="[Factory View] 探访自行车工厂 ④：理性与坚持 Nagasawa">[Factory View] 探访自行车工厂 ④：理性与坚</a></div>
+</li>
+<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+<div style="float:left;width:85px;height:55px; overflow:hidden;"><a href="/lookbike/fixed-gear/4.html" target="_blank"><img src="/uploads/allimg/140205/6.jpg" width="83" title="专为都市夜骑设计 ICE COLD NY 2013 秋冬系列" /></a></div>
+<div style="float:right;width:145px;height:52px; overflow:hidden;"><a href="/lookbike/fixed-gear/4.html" target="_blank" title="专为都市夜骑设计 ICE COLD NY 2013 秋冬系列">专为都市夜骑设计 ICE COLD NY 2013 秋冬系列</a></div>
+</li>
+
+
+
+</ul>
+                </div>
+            
+                <div class="widget" style="margin-bottom: 0px;margin-top:5px;">
+                    
+                    <a href="/">
+                    <img src="/xunmoban/ad/ad.jpg" />
+                    </a>
+</div>
+               
+                
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+    <script type="text/javascript" src="/xunmoban/js/z700bike_single.js"></script>
+  
+    <script type='text/javascript' src='/blog4/xunmoban/js/jquery.colorbox-min.js?ver=1.3.17.2'></script>
+
+
+    </div>
+
+    
+  <div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="/aboutus.html">关于我们</a></li>
+                <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157">
+                    <a href="/contact.html">联络我们</a></li>
+                <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158">
+                    <a href="/tougao.html">我要投稿</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &copy; 2002-2014 xunmoban.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/">
+                粤ICP备88888888号</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="/xunmoban/js/z700bike_global.js"></script>
+
+ 
+</body>
+</html>

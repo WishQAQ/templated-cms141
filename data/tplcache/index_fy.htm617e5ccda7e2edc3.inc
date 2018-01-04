@@ -1,0 +1,46 @@
+<?php
+$z[0]=Array("global","",236,264);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("global","",277,303);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",347,377);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",414,441);
+$z[3][4]['name']="cfg_keywords";
+$z[4]=Array("include","",1824,1865);
+$z[4][4]['filename']="head_index.htm";
+$z[5]=Array("arclist","\r\n\r\n<li style=\"display: list-item;\"><a href=\"[field:arcurl/]\" target=\"_blank\">\r\n                <img src=\"[field:flash/]\" alt=\"[field:fulltitle/]\"></a></li>\r\n       ",2111,2374);
+$z[5][4]['flag']="f";
+$z[5][4]['limit']="0,4";
+$z[5][4]['titlelen']="40";
+$z[5][4]['addfields']="flash";
+$z[5][4]['channelid']="1";
+$z[6]=Array("arclist","\r\n            <a href=\"[field:arcurl/]\" target=\"_blank\">\r\n    <img src=\"[field:flash/]\" alt=\"[field:title/]\" width=\"255px\" height=\"420px\"></a>\r\n    ",3083,3341);
+$z[6][4]['flag']="a";
+$z[6][4]['row']="1";
+$z[6][4]['orderby']="pubdate";
+$z[6][4]['titlelen']="28";
+$z[6][4]['addfields']="flash";
+$z[6][4]['channelid']="1";
+$z[7]=Array("channel","\r\n                    <a href='[field:typeurl/]'>[field:typename/]</a>\r\n                    ",4027,4170);
+$z[7][4]['type']="son";
+$z[7][4]['typeid']="1";
+$z[8]=Array("freelist","",4226,4242);
+$z[9]=Array("pagelist","",4344,4410);
+$z[9][4]['listitem']="index,end,pre,next,pageno";
+$z[9][4]['listsize']="5";
+$z[10]=Array("global","",4572,4597);
+$z[10][4]['name']="cfg_cmsurl";
+$z[11]=Array("global","",4855,4881);
+$z[11][4]['name']="cfg_cmspath";
+$z[12]=Array("arclist","\r\n\r\n<li style=\"border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;\">\r\n<div style=\"float:left;width:85px;height:55px; overflow:hidden;\"><a href=\"[field:arcurl/]\" target=\"_blank\"><img src=\"[field:litpic/]\" width=\"83\" title=\"[field:fulltitle/]\" /></a></div>\r\n<div style=\"float:right;width:145px;height:52px; overflow:hidden;\"><a href=\"[field:arcurl/]\" target=\"_blank\" title=\"[field:fulltitle/]\">[field:title/]</a></div>\r\n</li>\r\n",5897,6396);
+$z[12][4]['row']="5";
+$z[12][4]['orderby']="click";
+$z[12][4]['titlelen']="42";
+$z[13]=Array("flink","",6771,6808);
+$z[13][4]['linktype']="2";
+$z[13][4]['row']="24";
+$z[14]=Array("include","",9051,9094);
+$z[14][4]['filename']="footer_index.htm";
+
+?>

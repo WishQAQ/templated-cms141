@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="<?php echo $cfg_webname; ?>">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>文档管理 - 会员中心 - <?php echo $cfg_webname; ?></title>
+<link rel='stylesheet' id='_common-css'  href='/xunmoban/css/common2014.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_user-css'  href='/xunmoban/css/user.css' type='text/css' media='all' />
+<meta name="keywords" content="用户中心">
+<meta name="description" content="用户中心">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/xunmoban/img/icon-144x144.png">
+<!--[if lt IE 9]><script src="/xunmoban/js/html5.js"></script><![endif]-->
+</head>
+<body class="page page-id-1885 page-template page-template-pagesuser-php logged-in">
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+
+<header class="header">
+<div class="container">
+	<h1 class="logo"><a href="/" title="DEMO121演示站">DEMO121演示站</a></h1>	<ul class="nav">
+		<li class="navto-home"><a href="/"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+		<li class="navto-funny"><a href="/lookbike"><span class="glyphicon glyphicon-bullhorn"></span>单车分类</a></li>
+		<li class="navto-tech"><a href="/gear"><span class="glyphicon glyphicon-phone"></span>骑行装备</a></li>
+		<li class="navto-view"><a href="/life"><span class="glyphicon glyphicon-map-marker"></span>单车生活</a></li>
+		<li class="navto-food"><a href="/news"><span class="glyphicon glyphicon-cutlery"></span>行业资讯</a></li>
+		<li class="navto-life"><a href="http://xunmoban.com/"><span class="glyphicon glyphicon-thumbs-up"></span>织梦模板</a></li>
+
+
+	</ul>
+
+		<div class="slinks">
+		<a href="http://xunmoban.com/category-953349438.htm?spm=a1z10.5.w5002-7271511032.9.CVdbRA&search=y&catName=%C6%F3%D2%B5%D4%B4%C2%EB">企业源码</a> - <a href="http://xunmoban.com/category-977748136.htm?spm=a1z10.1.w5002-7271511032.5.w8sDee&search=y&catName=%BE%AB%C6%B7%B2%A9%BF%CD">精品博客</a> - <a href="/aboutus.html">关于我们 </a> - <a href="/contact.html">联系我们</a> - <a href="/tougao.html">我要投稿</a><br>
+		<a class="feed-weixin" rel="external nofollow" href="javascript:;">关注微信</a> - <a rel="external nofollow" href="#" title="alibaixiucom" target="_blank">新浪微博</a> - <a rel="external nofollow" href="#" title="alibaixiu" target="_blank">腾讯微博</a>
+
+	</div>
+</div>
+</header>
+
+<div class="container container-user">
+		<div class="userside">
+		<div class="usermenus">	
+			<ul class="usermenu">
+				<li><h4><a href="javascript:;">用户中心</a></h4></li>
+				<li class="usermenu-topicedit"><a href="article_add.php">投稿</a></li>
+				<li class="usermenu-topic active"><a href="content_list.php?channelid=1">文章管理</a></li>				
+				
+				
+			</ul>
+			<ul class="usermenu">
+				<li class="usermenu-user"><a href="edit_baseinfo.php">修改资料</a></li>
+                <li class="usermenu-user"><a href="edit_face.php">头像设置</a></li>
+				<li class="usermenu-signout"><a href="index_do.php?fmdo=login&dopost=exit#">退出</a></li>
+			</ul>
+					</div>
+	</div>
+<div class="content" id="contentframe">
+<div class="user-main"><ul class="user-postlist user-topiclist">
+          {dede:datalist}
+
+	<li class="topic-status-pending">
+		<span><small><?php
+if($fields['arcrank']>=0) echo "已审核";
+else if($fields['arcrank']==-2) echo "<font color='blue'>被退回</font>";
+else echo "<font color='red'>未审核</font>";
+?></small><?php echo GetDateMk($fields['senddate']); ?></span>
+		
+<a href='<?php echo $cfg_phpurl; ?>/view.php?aid=<?php echo $fields['id']; ?>' target='_blank'><?php echo $fields['title']; ?><?php echo IsPicArchives($fields['litpic']); ?></a>
+		
+	</li>
+    {/dede:datalist}
+
+</ul>
+<div class="user-loading"></div>
+</div>
+
+		<div class="user-tips"></div>
+	</div>
+
+<script src='/plus/mytag_js.php?aid=2' language='javascript'></script>
+
+</body>
+</html>

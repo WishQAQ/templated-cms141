@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="?php echo $cfg_webname; ?>">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title><?php echo $cfg_webname; ?>- 会员登录</title>
+<link rel='stylesheet' id='_common-css'  href='/xunmoban/css/common2014.css' type='text/css' media='all' />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/xunmoban/img/icon-144x144.png">
+<!--[if lt IE 9]><script src="/xunmoban/js/html5.js"></script><![endif]-->
+<script src="templets/js/j.js" language="javascript" type="text/javascript"></script>
+<script src="templets/js/base.js" language="javascript" type="text/javascript"></script>
+<script src='templets/js/CheckPassStrength.js' type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript" src='templets/js/reg_new.js'></script>
+<script type="text/javascript">
+function changeAuthCode() {
+	var num = 	new Date().getTime();
+	var rand = Math.round(Math.random() * 10000);
+	num = num + rand;
+	$('#ver_code').css('visibility','visible');
+	if ($("#login-item-reg #vdimgck")[0]) {
+		$("#login-item-reg #vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
+	}
+	if ($("#login-item-login #vdimgck")[0]) {
+		$("#login-item-login #vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
+	}
+	return false;
+}
+function getPassword(){
+	var pass = document.form2.userpwd.value;
+	document.form2.userpwdok.value = pass;
+}
+function getUname(){
+	var pass = document.form2.userid.value;
+	document.form2.uname.value = pass;
+}
+</script>
+</head>
+<body class="page page-id-1885 page-template page-template-pagesuser-php">
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+
+<header class="header">
+<div class="container">
+	<h1 class="logo"><a href="/" title="DEMO121演示站">DEMO121演示站</a></h1>	<ul class="nav">
+		<li class="navto-home"><a href="/"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+		<li class="navto-funny"><a href="/lookbike"><span class="glyphicon glyphicon-bullhorn"></span>单车分类</a></li>
+		<li class="navto-tech"><a href="/gear"><span class="glyphicon glyphicon-phone"></span>骑行装备</a></li>
+		<li class="navto-view"><a href="/life"><span class="glyphicon glyphicon-map-marker"></span>单车生活</a></li>
+		<li class="navto-food"><a href="/news"><span class="glyphicon glyphicon-cutlery"></span>行业资讯</a></li>
+		<li class="navto-life"><a href="http://www.xunmoban.com/moban/"><span class="glyphicon glyphicon-thumbs-up"></span>织梦模板</a></li>
+
+
+	</ul>
+
+		<div class="slinks">
+		<a href="http://www.xunmoban.com">企业源码</a> - <a href="http://www.xunmoban.com">精品博客</a> - <a href="/aboutus.html">关于我们 </a> - <a href="/contact.html">联系我们</a> - <a href="/tougao.html">我要投稿</a><br>
+		<a class="feed-weixin" rel="external nofollow" href="javascript:;">关注微信</a> - <a rel="external nofollow" href="#" title="alibaixiucom" target="_blank">新浪微博</a> - <a rel="external nofollow" href="#" title="alibaixiu" target="_blank">腾讯微博</a>
+
+	</div>
+</div>
+</header>
+
+<div class="container container-user loginshow">		
+		<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" style="margin-top:200px;width:480px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">登录或注册</h4>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <form name='form1' method='POST' action='index_do.php' class="login-item hide" id="login-item-login">
+                      <input type="hidden" name="fmdo" value="login">
+                      <input type="hidden" name="dopost" value="login">
+                      <input type="hidden" name="gourl" value="<?php if(!empty($gourl)) echo $gourl;?>">
+                        <h5><small evt="login.to.reg"><span class="glyphicon glyphicon-share-alt"></span> 注册</small>登录</h5>
+                        <h6>
+                            <label for="inputEmail">账号</label>
+                            <input type="text" name="userid" class="form-control" placeholder="登录账号" style="width:360px">
+                        </h6>
+                        <h6>
+                            <label for="inputPassword">密码</label>
+                            <input type="password" name="pwd" class="form-control" placeholder="登录密码" style="width:360px">
+                        </h6>
+                        <h6>
+                            <label for="inputEmail">验证码</label>
+                            <input type="text" name="vdcode" id="vdcode" class="form-control" style="width:80px;text-transform: uppercase;float:left;">
+          <img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;padding-top:5px;float:left" alt="看不清？点击更换" src="../include/vdimgck.php"/>
+           <div style="width:200px;height:34px;line-height:34px;float:left;margin-left:10px;">看不清？ <a href="#" onClick="changeAuthCode();">点击更换</a></div>                            
+                        </h6>                        
+                        
+                        <div class="login-submit">
+                            <input type="submit" class="btn" name="submit" value="登录">  
+                           <input type="hidden" checked="checked" name="keeptime" value="2592000" id="keeptime">
+                        </div>
+                    </form>
+
+                    <form method="post" action="reg_new.php" name="form2" class="login-item hide" id="login-item-reg">
+                        <input type="hidden" value="regbase" name="dopost"/>
+                        <input type="hidden" value="1" name="step"/>
+                        <input type="hidden" value="个人" name="mtype"/>                    
+                        <h5><small evt="login.to.login"><span class="glyphicon glyphicon-share-alt"></span> 登录</small>注册</h5>
+                        <h6>
+                        <label for="inputName">用户名</label>
+                        <input type="text" id="txtUsername" name="userid" class="form-control" placeholder="设置登陆账号" style="width:360px" onBlur="getUname()">
+                        <input type="hidden" class="intxt w200" size="20" value="" id="uname" name="uname"/>
+                        </h6>                        
+                        <h6>
+                        <label for="inputEmail">邮箱</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="邮箱" style="width:360px">
+                        </h6>
+
+                        <h6>
+                        <label for="inputPassword">密码</label>
+                        <input type="password" id="txtPassword" name="userpwd" class="form-control" placeholder="设置登录密码" style="width:360px" onBlur="getPassword()">
+                        <input type="hidden" class="intxt w200" size="20" value="" id="userpwdok" name="userpwdok"/>
+                        </h6>
+                        <h6>
+                            <label for="inputEmail">验证码</label>
+                            <input type="text" name="vdcode" id="vdcode" class="form-control" style="width:80px;text-transform: uppercase;float:left;">
+          <img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;padding-top:5px;float:left" alt="看不清？点击更换" src="../include/vdimgck.php"/>
+           <div style="width:200px;height:34px;line-height:34px;float:left;margin-left:10px;">看不清？ <a href="#" onClick="changeAuthCode();">点击更换</a></div>                            
+                        </h6>   
+                        <div class="login-submit">
+                            <input type="submit" class="btn" name="submit" value="快速注册">                              
+                        </div>
+                    </form>
+                    <div class="login-tips"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	</div>
+
+
+<script src='/plus/mytag_js.php?aid=2' language='javascript'></script>
+</body>
+</html>
